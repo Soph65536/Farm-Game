@@ -20,4 +20,7 @@ public class DialogueItem : ScriptableObject
 
     //dialogue text is modifiable
     public string DialogueText = "You can modify this text within the Dialogue Item or in the Dialogue Tree Graph!";
+
+    //event text should be left blank unless it wants to call an event
+    public string EventText = string.Empty;
 }

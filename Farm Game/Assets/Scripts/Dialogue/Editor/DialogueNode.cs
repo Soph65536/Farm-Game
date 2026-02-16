@@ -14,6 +14,7 @@ public class DialogueNode : Node
     internal DialogueItem dialogueItem;
     Image icon;
     TextField speechText;
+    TextField eventText;
 
     public DialogueNode(Vector2 position)
     {
@@ -59,11 +60,13 @@ public class DialogueNode : Node
         //create and update icon and speech text before drawing them
         icon = new Image();
         speechText = new TextField();
+        eventText = new TextField();
         UpdateIconAndSpeech();
 
         //icon image
         speechContainer.Add(icon);
-        speechText.RegisterValueChangedCallback(evt => ChangeSpeech(evt));
+        speechText.RegisterValueChangedCallback(evt => ChangeSpeechText(evt));
+        eventText.RegisterValueChangedCallback(evt => ChangeEventText(evt));
 
         //speech text in foldout
         Foldout textFoldout = new Foldout()
@@ -72,6 +75,14 @@ public class DialogueNode : Node
         };
         textFoldout.Add(speechText);
         speechContainer.Add(textFoldout);
+
+        //event text in foldout
+        Foldout eventFoldout = new Foldout()
+        {
+            text = "Event \n(Leave Empty for None)",
+        };
+        eventFoldout.Add(eventText);
+        speechContainer.Add(eventFoldout);
 
         //add speech container to the bottom of the node
         extensionContainer.Add(speechContainer);
@@ -120,13 +131,19 @@ public class DialogueNode : Node
             icon.sprite = null;
         }
 
-        //speech update
+        //speech and event text update
         speechText.value = dialogueItem != null ? dialogueItem.DialogueText : "Empty";
+        eventText.value = dialogueItem != null ? dialogueItem.EventText : "Empty";
     }
 
-    private void ChangeSpeech(ChangeEvent<string> evt)
+    private void ChangeSpeechText(ChangeEvent<string> evt)
     {
         if(dialogueItem != null) { dialogueItem.DialogueText = speechText.value; }
+    }
+
+    private void ChangeEventText(ChangeEvent<string> evt)
+    {
+        if (dialogueItem != null) { dialogueItem.EventText = eventText.value; }
     }
 
     private void ChangeDialogueItem(ChangeEvent<UnityEngine.Object> evt)
