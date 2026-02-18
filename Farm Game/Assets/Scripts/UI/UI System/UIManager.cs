@@ -60,6 +60,16 @@ public class UIManager : MonoBehaviour
         currentMenu.Open();
     }
 
+    public void EnterMenu(string menuName)
+    {
+        Menu newMenu = FindMenuByName(menuName);
+
+        if (currentMenu == newMenu || currentMenu != null) { return; }
+
+        currentMenu = newMenu;
+        currentMenu.Open();
+    }
+
     public void ExitMenu()
     {
         if (currentMenu == null) { return; }

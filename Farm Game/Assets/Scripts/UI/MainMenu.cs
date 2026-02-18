@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public Menu optionsMenu;
-
     public void StartGame()
     {
         UIManager.Instance.LoadScene(UIManager.Instance.startBuildIndex, LoadSceneMode.Single, UIManager.Instance.mainMenuBuildIndex);
@@ -14,9 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void Options()
     {
-        //if first time opening then find through uimanager
-        if(optionsMenu == null) { optionsMenu = UIManager.Instance.FindMenuByName("options"); }
-        UIManager.Instance.EnterMenu(optionsMenu);
+        UIManager.Instance.EnterMenu("options");
     }
 
     public void QuitGame()

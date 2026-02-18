@@ -5,7 +5,7 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     public string menuName; //we can find menus through their name, this should be all lowercase
-    [SerializeField] public GameObject menuObject; //in hierarchy this should be their child object
+    [SerializeField] private GameObject menuObject; //in hierarchy this should be their child object
 
     private void Start()
     {
