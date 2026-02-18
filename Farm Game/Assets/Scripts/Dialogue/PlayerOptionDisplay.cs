@@ -20,6 +20,7 @@ public class PlayerOptionDisplay : MonoBehaviour
 
         PlayerSpeechText.text = PlayerOption.dialogueItem.DialogueText;
         PlayerImage.sprite = PlayerOption.dialogueItem.IconRO;
+        PlayerImage.enabled = PlayerImage.sprite;
     }
 
     public void onPress()

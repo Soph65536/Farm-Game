@@ -6,28 +6,34 @@ public class TriggerDialogue : MonoBehaviour
 {
     public Menu dialogueMenu;
     [SerializeField] private string conversationAsset;
+    [SerializeField] private bool runOnAwake;
 
     [Header("Changes Camera Angle?")]
-    public bool HasCameraChange;
+    [SerializeField] private bool HasCameraChange;
 
     [Header("If Changes Camera Angle:\nNew gameobject for Camera Controller to move to")]
-    public GameObject NewCameraLocation;
+    [SerializeField] private GameObject NewCameraLocation;
+
+    private void Start()
+    {
+        if (runOnAwake) { RunDialogue(); }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            //if first time opening then find through uimanager
-            if (dialogueMenu == null) { dialogueMenu = UIManager.Instance.FindMenuByName("dialogue"); }
+        if (other.gameObject.CompareTag("Player") && !runOnAwake) { RunDialogue(); }
+    }
 
-            dialogueMenu.GetComponentInChildren<DialogueHandler>().conversationAsset = conversationAsset;
+    private void RunDialogue()
+    {
+        dialogueMenu = UIManager.Instance.FindMenuByName("dialogue");
+        dialogueMenu.GetComponentInChildren<DialogueHandler>(true).conversationAsset = conversationAsset;
 
-            UIManager.Instance.EnterMenu(dialogueMenu);
+        UIManager.Instance.EnterMenu(dialogueMenu);
 
-            //if camerachange, change camera to new location
-            //if (HasCameraChange) { other.GetComponentInChildren<CameraController>().ChangeCameraFocus(NewCameraLocation); }
+        //if camerachange, change camera to new location
+        //if (HasCameraChange) { other.GetComponentInChildren<CameraController>().ChangeCameraFocus(NewCameraLocation); }
 
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }

@@ -440,6 +440,7 @@ MonoBehaviour:
     previousguids: []
   PlayerTextPrefab: {fileID: 1083917672071209835, guid: b3659b210c3a14f4ea12527b13ca3daa, type: 3}
   PlayerTextContainer: {fileID: 1792802103734940947}
+  conversationAsset: 
 --- !u!1 &6940653943664713979
 GameObject:
   m_ObjectHideFlags: 0

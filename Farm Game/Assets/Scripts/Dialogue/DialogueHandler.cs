@@ -49,6 +49,13 @@ public class DialogueHandler : MonoBehaviour
 
     public void GetNextDialogueData(DialogueSaveData playerOption)
     {
+        //check for event in player option before next choice
+        if(playerOption.dialogueItem.EventText != string.Empty)
+        {
+            EventManager.Instance.RunEvent(playerOption.dialogueItem.EventText);
+        }
+
+        //get new dialogue!!
         currentData = null; //set currentdata to empty
         foreach(Transform child in PlayerTextContainer.transform) { Destroy(child.gameObject); } //remove all children within player text
 
@@ -62,6 +69,12 @@ public class DialogueHandler : MonoBehaviour
 
         //close dialogue if no more data
         if(currentData == null) { CloseDialogue(); }
+
+        //check for event in dialogue option
+        else if (currentData.dialogueItem.EventText != string.Empty)
+        {
+            EventManager.Instance.RunEvent(currentData.dialogueItem.EventText);
+        }
 
         //update player options
         SetPlayerDialogueOptions();
