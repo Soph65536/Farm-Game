@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6156726159723072008}
+  - component: {fileID: 3410371128127618593}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -35,6 +36,23 @@ Transform:
   - {fileID: 5437815059672806274}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3410371128127618593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906549360925765805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cbbd4f0a95f054e96a6d4c95d17cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growthStates:
+  - {fileID: 1192584990613638940}
+  - {fileID: 5376435397120339936}
+  - {fileID: 4220918798475344652}
+  - {fileID: 6574643168746064109}
 --- !u!1001 &526213187605861272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113,6 +131,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 51a44e5ce1a8052408e7389f4efcb41e, type: 3}
   m_PrefabInstance: {fileID: 526213187605861272}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1192584990613638940 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 51a44e5ce1a8052408e7389f4efcb41e, type: 3}
+  m_PrefabInstance: {fileID: 526213187605861272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3265711065971206024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dfd72a4491a1496469385142bf1489dd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -193,6 +216,11 @@ PrefabInstance:
 --- !u!4 &3087388604603547747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dfd72a4491a1496469385142bf1489dd, type: 3}
+  m_PrefabInstance: {fileID: 3265711065971206024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4220918798475344652 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: dfd72a4491a1496469385142bf1489dd, type: 3}
   m_PrefabInstance: {fileID: 3265711065971206024}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5547386361225172073
@@ -265,7 +293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4d48ca58cd4bfc24bb1325ad9dc949b7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -275,6 +303,11 @@ PrefabInstance:
 --- !u!4 &5437815059672806274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d48ca58cd4bfc24bb1325ad9dc949b7, type: 3}
+  m_PrefabInstance: {fileID: 5547386361225172073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6574643168746064109 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 4d48ca58cd4bfc24bb1325ad9dc949b7, type: 3}
   m_PrefabInstance: {fileID: 5547386361225172073}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6727667712351482724
@@ -347,13 +380,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39e38c8d48f20a340b8910e41a97d2ed, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e38c8d48f20a340b8910e41a97d2ed, type: 3}
+--- !u!23 &5376435397120339936 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 39e38c8d48f20a340b8910e41a97d2ed, type: 3}
+  m_PrefabInstance: {fileID: 6727667712351482724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6545915395108131983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39e38c8d48f20a340b8910e41a97d2ed, type: 3}
