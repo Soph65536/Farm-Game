@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -15,8 +16,18 @@ public class PlayerInventory : MonoBehaviour
         SetInventoryMenu();
     }
 
+    private void OnEnable()
+    {
+        Player.Instance.input.actions["UseItem"].performed += UseHeldItem;
+    }
+
+    private void OnDisable()
+    {
+        Player.Instance.input.actions["UseItem"].performed -= UseHeldItem;
+    }
+
     //runs when use item control is pressed
-    public void UseHeldItem()
+    public void UseHeldItem(InputAction.CallbackContext context)
     {
         if (heldItem == null) { return; } //no held item so nothing happens
 

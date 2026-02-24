@@ -24,9 +24,27 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "79edf3c1-ed49-4905-98a9-945dd14c5762",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "9954caf3-6e10-42f9-8d42-bf75a9a46683",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseItem",
+                    "type": "Button",
+                    "id": "33cd69af-ba61-4aec-a27b-9aaa4244fccd",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -218,6 +236,50 @@
                     "processors": "",
                     "groups": "Joystick",
                     "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bbaa34d9-d482-4154-9d64-7372ee0c4788",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e679cad7-4fc1-461c-82b2-b9a265433e37",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f20c4e2-c2d4-40f2-a6bb-fc6b9a567f79",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dbaa44f2-c6cf-4cda-b780-9fe5f034318d",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
