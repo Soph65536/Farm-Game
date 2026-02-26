@@ -324,12 +324,20 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8196956405412646531, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196956405412646531, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196956405412646531, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
       propertyPath: m_Constraints
-      value: 48
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 8785546675895916228, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
       propertyPath: jumpHeight
-      value: 700000
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 8785546675895916228, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
       propertyPath: gravityScale
@@ -345,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9068285320861793040, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 9068285320861793040, guid: ae7d06980f36acc488fd1eb1028f11dd, type: 3}
       propertyPath: m_LocalPosition.z

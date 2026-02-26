@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
     [SerializeField] private float jumpHeight;
-    [SerializeField] private float gravityScale;
     [SerializeField] private GameObject groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
@@ -55,24 +54,14 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //move based on input
-        rb.velocity = new Vector3(movement.x * moveSpeed * Time.deltaTime, 0, movement.y * moveSpeed * Time.deltaTime);
+        rb.velocity = new Vector3(movement.x * moveSpeed * Time.deltaTime, rb.velocity.y, movement.y * moveSpeed * Time.deltaTime);
 
-        grounded = Gravity();
+        Gravity();
     }
 
-    private bool Gravity()
+    private void Gravity()
     {
-        //if found any ground within the ground check area then we are grounded
-        if(Physics.OverlapBox(groundCheck.transform.position, groundCheck.transform.localScale / 2, Quaternion.identity, groundLayer).Length > 0)
-        {
-            return true;
-        }
-        else
-        {
-            //add gravity because we are falling
-            rb.AddForce(Vector3.down * baseGravity * gravityScale * Time.deltaTime, ForceMode.Acceleration);
-            return false;
-        }
+        grounded = Physics.OverlapBox(groundCheck.transform.position, groundCheck.transform.localScale / 2, Quaternion.identity, groundLayer).Length > 0;
     }
 
     private void Look(InputAction.CallbackContext context)
