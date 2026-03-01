@@ -9,8 +9,10 @@ public class PlayerMovement : MonoBehaviour
     const float baseGravity = 9.81f;
 
     private Rigidbody rb;
+    private GameObject cameraHolder;
 
     [Header("Values")]
+    [SerializeField] private float lookYClamp;
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
     [SerializeField] private float jumpHeight;
@@ -19,15 +21,18 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveSpeed;
     private Vector2 movement;
+    private Vector2 previousLook;
     private bool grounded;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        cameraHolder = Player.Instance.cameraObject.transform.parent.gameObject;
 
         if (walkSpeed == 0 || runSpeed == 0 || jumpHeight == 0) { Debug.Log("Player movement values not set. Plase change in inspector."); }
         moveSpeed = walkSpeed;
         movement = Vector2.zero;
+        previousLook = Vector2.zero;
         grounded = false;
     }
 
@@ -66,9 +71,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Look(InputAction.CallbackContext context)
     {
-        Vector2 look = context.ReadValue<Vector2>();
+        //Vector2 look = context.ReadValue<Vector2>();
+        ////cameraHolder.transform.Rotate(new Vector3(-look.x, look.y, 0));
+        //cameraHolder.transform.rotation = Quaternion.Euler(Mathf.Clamp(cameraHolder.transform.rotation.x - look.y, -lookYClamp, lookYClamp), cameraHolder.transform.rotation.y + look.x, 0);
 
-        //player.instance.camera move with look values
+        //previousLook = look;
     }
 
     private void Movement(InputAction.CallbackContext context)
@@ -77,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed)
         {
             movement = context.ReadValue<Vector2>();
-            transform.rotation = Quaternion.LookRotation(new Vector3(movement.x, 0, movement.y));
+            //transform.rotation = Quaternion.Euler(new Vector3(movement.x, 0, movement.y));
         }
         else
         {

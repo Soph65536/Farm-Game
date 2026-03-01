@@ -20,8 +20,10 @@ public class Player : MonoBehaviour
     public HuntingMechanic hunting;
     public ForagingMechanic foraging;
 
-    public Camera camera;
     public Animator animator;
+    //needs manual defining!
+    public GameObject cameraObject;
+    public GameObject model;
 
     //make sure there is only 1 player object and it exists throughout all scenes
     public static Player Instance { get; private set; }
@@ -46,7 +48,6 @@ public class Player : MonoBehaviour
         hunting = GetComponent<HuntingMechanic>();
         foraging = GetComponent<ForagingMechanic>();
 
-        camera = GetComponentInChildren<Camera>();
         animator = GetComponentInChildren<Animator>();
     }
 }
