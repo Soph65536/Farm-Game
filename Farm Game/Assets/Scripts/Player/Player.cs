@@ -21,9 +21,6 @@ public class Player : MonoBehaviour
     public ForagingMechanic foraging;
 
     public Animator animator;
-    //needs manual defining!
-    public GameObject cameraObject;
-    public GameObject model;
 
     //make sure there is only 1 player object and it exists throughout all scenes
     public static Player Instance { get; private set; }

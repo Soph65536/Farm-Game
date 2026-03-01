@@ -1,11 +1,15 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CinemachineFreeLook))]
 public class CameraController : MonoBehaviour
 {
-    private GameObject cameraObject;
-    [SerializeField] private float lerpSpeed;
+    private GameObject followObject;
+    private CinemachineFreeLook freeLook;
+
+    private bool lookingAtPlayer;
 
     public static CameraController Instance { get; private set; }
 
@@ -20,6 +24,8 @@ public class CameraController : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        freeLook = GetComponent<CinemachineFreeLook>();
     }
 
     private void Start()
@@ -29,17 +35,27 @@ public class CameraController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, cameraObject.transform.position, lerpSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, cameraObject.transform.rotation, lerpSpeed * Time.deltaTime);
+        if (lookingAtPlayer) { Player.Instance.gameObject.transform.eulerAngles = new Vector3(0, transform.rotation.eulerAngles.y, 0); }
+    }
+
+    private void UpdateCinemachineFollow()
+    {
+        lookingAtPlayer = followObject == Player.Instance.gameObject; //update player bool
+
+        //set cinemachine camera values
+        freeLook.Follow = followObject.transform;
+        freeLook.LookAt = followObject.transform;
     }
 
     public void FocusOnPlayer()
     {
-        cameraObject = Player.Instance.cameraObject;
+        followObject = Player.Instance.gameObject;
+        UpdateCinemachineFollow();
     }
 
     public void FocusOnObject(GameObject obj)
     {
-        cameraObject = obj;
+        followObject = obj;
+        UpdateCinemachineFollow();
     }
 }

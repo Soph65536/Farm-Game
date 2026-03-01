@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private GameObject cameraHolder;
 
     [Header("Values")]
-    [SerializeField] private float lookYClamp;
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
     [SerializeField] private float jumpHeight;
@@ -21,24 +20,20 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveSpeed;
     private Vector2 movement;
-    private Vector2 previousLook;
     private bool grounded;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        cameraHolder = Player.Instance.cameraObject.transform.parent.gameObject;
 
         if (walkSpeed == 0 || runSpeed == 0 || jumpHeight == 0) { Debug.Log("Player movement values not set. Plase change in inspector."); }
         moveSpeed = walkSpeed;
         movement = Vector2.zero;
-        previousLook = Vector2.zero;
         grounded = false;
     }
 
     private void OnEnable()
     {
-        Player.Instance.input.actions["Look"].performed += Look;
         Player.Instance.input.actions["Movement"].performed += Movement;
         Player.Instance.input.actions["Movement"].canceled += Movement;
         Player.Instance.input.actions["Run"].performed += Sprint;
@@ -48,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
-        Player.Instance.input.actions["Look"].performed -= Look;
         Player.Instance.input.actions["Movement"].performed -= Movement;
         Player.Instance.input.actions["Movement"].canceled += Movement;
         Player.Instance.input.actions["Run"].performed -= Sprint;
@@ -59,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //move based on input
-        rb.velocity = new Vector3(movement.x * moveSpeed * Time.deltaTime, rb.velocity.y, movement.y * moveSpeed * Time.deltaTime);
+        rb.velocity = (transform.forward * movement.y + transform.right * movement.x) * moveSpeed * Time.deltaTime;
 
         Gravity();
     }
@@ -69,22 +63,12 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics.OverlapBox(groundCheck.transform.position, groundCheck.transform.localScale / 2, Quaternion.identity, groundLayer).Length > 0;
     }
 
-    private void Look(InputAction.CallbackContext context)
-    {
-        //Vector2 look = context.ReadValue<Vector2>();
-        ////cameraHolder.transform.Rotate(new Vector3(-look.x, look.y, 0));
-        //cameraHolder.transform.rotation = Quaternion.Euler(Mathf.Clamp(cameraHolder.transform.rotation.x - look.y, -lookYClamp, lookYClamp), cameraHolder.transform.rotation.y + look.x, 0);
-
-        //previousLook = look;
-    }
-
     private void Movement(InputAction.CallbackContext context)
     {
         //if pressing movement keys get input, else set movement to 0
         if (context.performed)
         {
             movement = context.ReadValue<Vector2>();
-            //transform.rotation = Quaternion.Euler(new Vector3(movement.x, 0, movement.y));
         }
         else
         {
