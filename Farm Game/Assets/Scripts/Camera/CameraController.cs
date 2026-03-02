@@ -35,7 +35,7 @@ public class CameraController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (lookingAtPlayer) { Player.Instance.gameObject.transform.eulerAngles = new Vector3(0, transform.rotation.eulerAngles.y, 0); }
+        if (lookingAtPlayer) { Player.Instance.movement.rotation = new Vector3(0, transform.rotation.eulerAngles.y, 0); }
     }
 
     private void UpdateCinemachineFollow()

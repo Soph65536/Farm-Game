@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveSpeed;
     private Vector2 movement;
+    [HideInInspector] public Vector3 rotation;
     private bool grounded;
 
     private void Awake()
@@ -69,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed)
         {
             movement = context.ReadValue<Vector2>();
+            transform.localEulerAngles = rotation;
         }
         else
         {
