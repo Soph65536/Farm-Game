@@ -8,9 +8,6 @@ public class UIManager : MonoBehaviour
     public List<Menu> menus;
     public Menu currentMenu;
 
-    public int mainMenuBuildIndex;
-    public int startBuildIndex;
-
     public static UIManager Instance { get; private set; }
 
     private void Awake()
@@ -28,19 +25,6 @@ public class UIManager : MonoBehaviour
         menus = new List<Menu>();
         currentMenu = null;
     }
-
-
-    public void LoadScene(int sceneToLoad, LoadSceneMode loadMode)
-    {
-        SceneManager.LoadScene(sceneToLoad, loadMode);
-    }
-
-    public void LoadScene(int sceneToLoad, LoadSceneMode loadMode, int sceneToUnload)
-    {
-        SceneManager.LoadScene(sceneToLoad, loadMode);
-        SceneManager.UnloadSceneAsync(sceneToUnload);
-    }
-
 
     public Menu FindMenuByName(string name)
     {

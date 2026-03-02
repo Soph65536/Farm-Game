@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        UIManager.Instance.LoadScene(UIManager.Instance.startBuildIndex, LoadSceneMode.Single, UIManager.Instance.mainMenuBuildIndex);
+        LevelLoading.Instance.LoadScene(LevelLoading.Instance.startBuildIndex, LoadSceneMode.Single, LevelLoading.Instance.mainMenuBuildIndex);
     }
 
     public void Options()
@@ -17,6 +17,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-
+        Application.Quit();
     }
 }
