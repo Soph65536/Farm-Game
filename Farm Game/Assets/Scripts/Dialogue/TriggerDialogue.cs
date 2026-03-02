@@ -16,7 +16,7 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Start()
     {
-        if (runOnAwake) { RunDialogue(); }
+        if (runOnAwake) { Invoke(nameof(RunDialogue), 0.5f); }
     }
 
     private void OnTriggerEnter(Collider other)
