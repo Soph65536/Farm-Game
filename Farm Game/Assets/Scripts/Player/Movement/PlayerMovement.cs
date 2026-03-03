@@ -55,9 +55,9 @@ public class PlayerMovement : MonoBehaviour
     {
         //rotation
         transform.localEulerAngles = rotation;
-        Player.Instance.model.transform.localEulerAngles = new Vector3(movement.x, 0, movement.y); //this needs fixing so it does the thing where it gets y rotation from the x and z its on deity windblast
+        
         //move based on input
-        rb.velocity = (transform.forward * movement.y + transform.right * movement.x) * moveSpeed * Time.deltaTime;
+        rb.velocity = (transform.forward * movement.y + transform.right * movement.x) * moveSpeed * Time.deltaTime; //need to fix so it isnt resetting rb.velociy.y to 0
 
         Gravity();
     }
@@ -73,10 +73,13 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed)
         {
             movement = context.ReadValue<Vector2>();
+            float movementAngle = 180 / Mathf.PI * Mathf.Atan2(movement.y, -movement.x) - 90;
+            Player.Instance.model.transform.localEulerAngles = new Vector3(0, movementAngle, 0);
         }
         else
         {
             movement = Vector2.zero;
+            Player.Instance.model.transform.localEulerAngles = Vector3.zero;
         }
     }
 
