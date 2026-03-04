@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb02e8c57bb6be640a5ffbcff69d6b78, type: 3}
   m_Name: CSChoice3
   m_EditorClassIdentifier: 
-  NameText: 
+  NameText: ???
   Icon: {fileID: 0}
   IsPlayerTextOption: 0
-  DialogueText: You can modify this text within the Dialogue Item or in the Dialogue
-    Tree Graph!
+  DialogueText: more dialogue....
   EventText: 

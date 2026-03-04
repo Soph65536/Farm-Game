@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        LevelLoading.Instance.LoadScene(LevelLoading.Instance.startBuildIndex, LoadSceneMode.Single, LevelLoading.Instance.mainMenuBuildIndex);
+        LevelLoading.Instance.LoadScene(LevelLoading.Instance.charSelectBuildIndex, LoadSceneMode.Single, LevelLoading.Instance.mainMenuBuildIndex);
     }
 
     public void Options()

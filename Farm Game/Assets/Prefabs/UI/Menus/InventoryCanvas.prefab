@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8444818725952844459}
   - component: {fileID: 7018072492828489383}
   - component: {fileID: 5981730859525941607}
+  - component: {fileID: 9036301118085875791}
   m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
@@ -117,6 +118,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuName: inventory
   menuObject: {fileID: 8699015019240231916}
+--- !u!114 &9036301118085875791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741934544034410391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189e1c30086499a4783fd411a6ead999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputAction: MenuInventory
 --- !u!1 &8699015019240231916
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +281,23 @@ PrefabInstance:
     - target: {fileID: 508748873906803208, guid: 26034d9045437ff458649a04dabec438, type: 3}
       propertyPath: m_Name
       value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
+      propertyPath: tutorialDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
+      propertyPath: tutorialDialogue.Array.data[0]
+      value: 'This is the inventory menu. Items you''ve gathered will appear here. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
+      propertyPath: tutorialDialogue.Array.data[1]
+      value: 'When you are in the farm, left click on a item to hold it. You will
+        then be able to use this item. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
+      propertyPath: tutorialDialogue.Array.data[2]
+      value: 'Right click on an item to discard it. '
       objectReference: {fileID: 0}
     - target: {fileID: 3375716456474532643, guid: 26034d9045437ff458649a04dabec438, type: 3}
       propertyPath: m_Pivot.x

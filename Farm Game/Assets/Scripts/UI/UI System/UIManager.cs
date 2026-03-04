@@ -50,6 +50,8 @@ public class UIManager : MonoBehaviour
 
         if (currentMenu == newMenu || currentMenu != null) { return; }
 
+        if (Player.Instance != null) { Player.Instance.DisableInput(); }
+
         currentMenu = newMenu;
         currentMenu.Open();
     }
@@ -57,6 +59,8 @@ public class UIManager : MonoBehaviour
     public void ExitMenu()
     {
         if (currentMenu == null) { return; }
+
+        if (Player.Instance != null) { Player.Instance.EnableInput(); }
 
         currentMenu.Close();
         currentMenu = null;

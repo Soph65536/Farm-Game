@@ -16,7 +16,7 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Start()
     {
-        if (runOnAwake) { Invoke(nameof(RunDialogue), 0.5f); }
+        if (runOnAwake) { Invoke(nameof(RunDialogue), 0.5f); } //build wants to run this start function before dialogue handler is setup so must invoke this
     }
 
     private void OnTriggerEnter(Collider other)

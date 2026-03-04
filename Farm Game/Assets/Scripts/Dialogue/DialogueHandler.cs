@@ -29,8 +29,8 @@ public class DialogueHandler : MonoBehaviour
     {
         ClearPlayerDialogueOptions();
 
-        //set this to false
-        this.gameObject.SetActive(false);
+        //close this menu
+        UIManager.Instance.ExitMenu();
     }
 
     private void GetTreeData()

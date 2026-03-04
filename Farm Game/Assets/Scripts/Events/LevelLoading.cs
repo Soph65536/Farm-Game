@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoading : MonoBehaviour
 {
     public int mainMenuBuildIndex;
-    public int startBuildIndex;
+    public int charSelectBuildIndex;
     public int worldAreaBuildIndex;
     public int farmAreaBuildIndex;
 
@@ -38,6 +38,11 @@ public class LevelLoading : MonoBehaviour
     public void LoadScene(int sceneToLoad, LoadSceneMode loadMode, int sceneToUnload)
     {
         SceneManager.LoadScene(sceneToLoad, loadMode);
+        SceneManager.UnloadSceneAsync(sceneToUnload);
+    }
+
+    public void UnloadScene(int sceneToUnload)
+    {
         SceneManager.UnloadSceneAsync(sceneToUnload);
     }
 }

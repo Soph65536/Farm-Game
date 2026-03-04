@@ -48,4 +48,27 @@ public class Player : MonoBehaviour
 
         animator = GetComponentInChildren<Animator>();
     }
+
+    public void EnableInput()
+    {
+        //reenable all input actions
+        foreach (InputAction action in input.actions)
+        {
+            action.Enable();
+        }
+    }
+
+    public void DisableInput()
+    {
+        Debug.Log(input.actions);
+        foreach (InputAction action in input.actions)
+        {
+            Debug.Log(action.name);
+            //if action name doesnt contain menu then its an action and should be disabled
+            if (!(action.name.Contains("Menu")))
+            {
+                action.Disable();
+            }
+        }
+    }
 }

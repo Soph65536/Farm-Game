@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuBuildIndex: 0
-  startBuildIndex: 1
+  charSelectBuildIndex: 1
   worldAreaBuildIndex: 2
   farmAreaBuildIndex: 3
 --- !u!4 &682839551

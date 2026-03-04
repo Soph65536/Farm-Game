@@ -16,7 +16,7 @@ public class Tutorial : MonoBehaviour
 
     private void SetText()
     {
-        if(currentDialogueIndex > tutorialDialogue.Length) { CloseTutorial(); }
+        if(currentDialogueIndex > tutorialDialogue.Length - 1) { CloseTutorial(); }
         else
         {
             tutorialText.text = tutorialDialogue[currentDialogueIndex];
