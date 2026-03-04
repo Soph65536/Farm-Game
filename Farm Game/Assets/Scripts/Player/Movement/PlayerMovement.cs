@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveSpeed;
     private Vector2 movement;
+    private Vector3 movementVelocity;
     [HideInInspector] public Vector3 rotation;
     private bool grounded;
 
@@ -28,8 +29,12 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         if (walkSpeed == 0 || runSpeed == 0 || jumpHeight == 0) { Debug.Log("Player movement values not set. Plase change in inspector."); }
+
+        //set inital values for vars
         moveSpeed = walkSpeed;
         movement = Vector2.zero;
+        movementVelocity = Vector3.zero;
+        rotation = Vector3.zero;
         grounded = false;
     }
 
@@ -56,8 +61,9 @@ public class PlayerMovement : MonoBehaviour
         //rotation
         transform.localEulerAngles = rotation;
         
-        //move based on input
-        rb.velocity = (transform.forward * movement.y + transform.right * movement.x) * moveSpeed * Time.deltaTime; //need to fix so it isnt resetting rb.velociy.y to 0
+        //set movement velocity based on input
+        movementVelocity = (transform.forward * movement.y + transform.right * movement.x) * moveSpeed * Time.deltaTime;
+        rb.velocity = new Vector3 (movementVelocity.x, rb.velocity.y, movementVelocity.z);
 
         Gravity();
     }
@@ -65,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
     private void Gravity()
     {
         grounded = Physics.OverlapBox(groundCheck.transform.position, groundCheck.transform.localScale / 2, Quaternion.identity, groundLayer).Length > 0;
+
+        Player.Instance.animator.SetBool("Air", !grounded);
     }
 
     private void Movement(InputAction.CallbackContext context)
@@ -81,18 +89,24 @@ public class PlayerMovement : MonoBehaviour
             movement = Vector2.zero;
             Player.Instance.model.transform.localEulerAngles = Vector3.zero;
         }
+
+        Player.Instance.animator.SetBool("Moving", context.performed);
     }
 
     private void Sprint(InputAction.CallbackContext context)
     {
         moveSpeed = context.performed ? runSpeed : walkSpeed;
+
+        Player.Instance.animator.SetBool("Sprinting", context.performed);
     }
 
     private void Jump(InputAction.CallbackContext context)
     {
         if (grounded)
         {
-            rb.AddForce(Vector3.up * jumpHeight * Time.deltaTime, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpHeight * Time.deltaTime, ForceMode.VelocityChange);
+
+            Player.Instance.animator.SetTrigger("StartJump");
         }
     }
 }
