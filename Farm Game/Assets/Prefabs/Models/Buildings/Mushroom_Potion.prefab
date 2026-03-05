@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31e4e745876260949b0fb79359aa7d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5694237
+      value: -11.589506
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31e4e745876260949b0fb79359aa7d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.46226946
+      value: 6.934042
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31e4e745876260949b0fb79359aa7d3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.560734
+      value: 8.597796
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31e4e745876260949b0fb79359aa7d3a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -69,7 +69,8 @@ PrefabInstance:
       value: Mushroom_Potion
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3532955182506012565, guid: 31e4e745876260949b0fb79359aa7d3a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31e4e745876260949b0fb79359aa7d3a, type: 3}

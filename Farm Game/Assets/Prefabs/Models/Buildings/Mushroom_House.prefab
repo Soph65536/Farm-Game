@@ -344,15 +344,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.2665176
+      value: -10.070375
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4693727
+      value: 7.0405903
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.829441
+      value: 11.882959
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -523,13 +523,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -3133498875991405556, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
-      insertIndex: 20
+      insertIndex: 19
       addedObject: {fileID: 1456879889945821369}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
-      insertIndex: 21
+      insertIndex: 20
       addedObject: {fileID: 7588687603397759976}
     - targetCorrespondingSourceObject: {fileID: 6637566459259135595, guid: e4ff47173409f504ab797acca4e7bfe2, type: 3}
       insertIndex: -1
