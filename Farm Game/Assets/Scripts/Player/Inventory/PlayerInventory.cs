@@ -38,7 +38,7 @@ public class PlayerInventory : MonoBehaviour
 
     private int FindItemIndex(InventoryItem item)
     {
-        for (int i = 0; i < items.Count - 1; i++)
+        for (int i = 0; i < items.Count; i++)
         {
             if (items[i].itemType == item) { return i; }
         }
