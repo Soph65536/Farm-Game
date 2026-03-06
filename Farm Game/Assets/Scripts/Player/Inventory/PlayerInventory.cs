@@ -20,6 +20,7 @@ public class PlayerInventory : MonoBehaviour
         inventoryItemHolder = inventoryMenu.GetComponentInChildren<InventoryItemHolder>(true);
     }
 
+
     private void Start()
     {
         items = new List<InventoryMenuItem>();
@@ -35,6 +36,7 @@ public class PlayerInventory : MonoBehaviour
     {
         Player.Instance.input.actions["UseItem"].performed -= UseHeldItem;
     }
+
 
     private int FindItemIndex(InventoryItem item)
     {
@@ -65,7 +67,7 @@ public class PlayerInventory : MonoBehaviour
         inventoryItemHolder.UpdateItems(items);
     }
 
-    private void RemoveItem(InventoryMenuItem menuItem)
+    public void RemoveItem(InventoryMenuItem menuItem)
     {
         ////remove current status of helditem from items
         //items.Remove(menuItem);
@@ -85,7 +87,13 @@ public class PlayerInventory : MonoBehaviour
         inventoryItemHolder.UpdateItems(items);
     }
 
-    //runs when use item control is pressed
+
+    public void SetHeldItem(InventoryMenuItem menuItem)
+    {
+        heldItem = menuItem;
+    }
+
+    //runs when use item input is pressed
     public void UseHeldItem(InputAction.CallbackContext context)
     {
         if (heldItem == null) { return; } //no held item so nothing happens

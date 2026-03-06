@@ -1,9 +1,7 @@
 using Inventory;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 //should be added to the inventory item container
 public class InventoryItemHolder : MonoBehaviour
@@ -17,8 +15,8 @@ public class InventoryItemHolder : MonoBehaviour
         foreach (InventoryMenuItem item in items)
         {
             GameObject newItem = Instantiate(itemPrefab, transform);
-            newItem.GetComponent<Image>().sprite = item.itemType.Sprite;
-            newItem.GetComponentInChildren<TextMeshProUGUI>().text = item.quantity.ToString();
+
+            newItem.GetComponent<InventoryItemButton>().SetupItem(item);
         }
     }
 
