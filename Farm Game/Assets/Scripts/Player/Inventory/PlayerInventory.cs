@@ -96,14 +96,20 @@ public class PlayerInventory : MonoBehaviour
     //runs when use item input is pressed
     public void UseHeldItem(InputAction.CallbackContext context)
     {
+        Debug.Log(heldItem.itemType.Name.ToString());
+
         if (heldItem == null) { return; } //no held item so nothing happens
 
-        if(heldItem.GetType() == typeof(Crop))
+        //if not currently in menu then proceed
+        if(UIManager.Instance.currentMenu == null)
         {
-            if (Player.Instance.farming.PlantSeed((Crop)heldItem.itemType)) 
-            { 
-                RemoveItem(heldItem); 
-                //plant seed animation
+            if (heldItem.itemType.GetType() == typeof(Crop))
+            {
+                if (Player.Instance.farming.PlantSeed((Crop)heldItem.itemType))
+                {
+                    RemoveItem(heldItem);
+                    //plant seed animation
+                }
             }
         }
     }

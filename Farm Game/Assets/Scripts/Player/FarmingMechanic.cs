@@ -18,11 +18,24 @@ public class FarmingMechanic : MonoBehaviour
 
     public SoilPlot FindNearestSoilPlot(bool empty)
     {
-        return null;
+        SoilPlot[] plotsInScene = FindObjectsByType<SoilPlot>(0);
 
+        SoilPlot nearestSoilPlot = null;
+        float nearestDistance = Mathf.Infinity;
 
-        //check for soil plots within max planting distance
+        foreach (SoilPlot plot in plotsInScene)
+        {
+            if (empty && plot.currentCrop != null) { continue; } //if looking for empty plot and this is occupied then skip
 
-        //if empty is true and soil plot is occupied then skip over it
+            float plotDistance = Vector3.Distance(transform.position, plot.transform.position);
+            if (plotDistance < nearestDistance)
+            {
+                nearestSoilPlot = plot;
+                nearestDistance = plotDistance;
+            }
+        }
+
+        if (nearestDistance > maxPlantingDistance) { return null; }
+        return nearestSoilPlot;
     }
 }
