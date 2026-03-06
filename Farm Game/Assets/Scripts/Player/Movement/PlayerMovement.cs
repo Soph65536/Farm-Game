@@ -104,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (grounded)
         {
-            rb.AddForce(Vector3.up * jumpHeight * Time.deltaTime, ForceMode.VelocityChange);
+            rb.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
 
             Player.Instance.animator.SetTrigger("StartJump");
         }

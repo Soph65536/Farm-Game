@@ -6,15 +6,24 @@ using UnityEngine.InputSystem;
 
 public class PlayerInventory : MonoBehaviour
 {
+    const int maxItems = 32;
+
     private List<InventoryMenuItem> items;
     private InventoryMenuItem heldItem;
 
     private Menu inventoryMenu;
-    private void SetInventoryMenu() { inventoryMenu = UIManager.Instance.FindMenuByName("inventory"); }
+    private InventoryItemHolder inventoryItemHolder;
+
+    private void SetInventoryMenus()
+    {
+        inventoryMenu = UIManager.Instance.FindMenuByName("inventory");
+        inventoryItemHolder = inventoryMenu.GetComponentInChildren<InventoryItemHolder>(true);
+    }
 
     private void Start()
     {
-        SetInventoryMenu();
+        items = new List<InventoryMenuItem>();
+        Invoke(nameof(SetInventoryMenus), 0.5f);
     }
 
     private void OnEnable()
@@ -27,6 +36,55 @@ public class PlayerInventory : MonoBehaviour
         Player.Instance.input.actions["UseItem"].performed -= UseHeldItem;
     }
 
+    private int FindItemIndex(InventoryItem item)
+    {
+        for (int i = 0; i < items.Count - 1; i++)
+        {
+            if (items[i].itemType == item) { return i; }
+        }
+
+        return -2; //using -2 as representation of null
+    }
+
+    public void AddItem(InventoryItem item)
+    {
+        int index = FindItemIndex(item);
+
+        //if already has any of item then increase quantity
+        if (index != -2) //if index isnt 'null' then has item
+        {
+            items[index].quantity++;
+        }
+        //otherwise add item to items
+        else
+        {
+            InventoryMenuItem newMenuItem = new(item);
+            if(items.Count < maxItems) { items.Add(newMenuItem); }
+        }
+
+        inventoryItemHolder.UpdateItems(items);
+    }
+
+    private void RemoveItem(InventoryMenuItem menuItem)
+    {
+        ////remove current status of helditem from items
+        //items.Remove(menuItem);
+
+        ////decrease quantity of held item since used 1
+        //menuItem.quantity--;
+
+        ////if quantity is 1 or more then readd to items
+        //if (menuItem.quantity >= 1) { items.Add(menuItem); }
+        ////otherwise stop holding item since we don't have any of it left
+        //else { menuItem = null; }
+
+        int index = FindItemIndex(menuItem.itemType);
+        items[index].quantity--;
+        if (items[index].quantity <= 0) { items.RemoveAt(index); }
+
+        inventoryItemHolder.UpdateItems(items);
+    }
+
     //runs when use item control is pressed
     public void UseHeldItem(InputAction.CallbackContext context)
     {
@@ -36,26 +94,9 @@ public class PlayerInventory : MonoBehaviour
         {
             if (Player.Instance.farming.PlantSeed((Crop)heldItem.itemType)) 
             { 
-                RemoveHeldItem(); 
+                RemoveItem(heldItem); 
                 //plant seed animation
             }
-        }
-    }
-
-    private void RemoveHeldItem()
-    {
-        if(heldItem != null)
-        {
-            //remove current status of helditem from items
-            items.Remove(heldItem);
-
-            //decrease quantity of held item since used 1
-            heldItem.quantity--;
-
-            //if quantity is 1 or more then readd to items
-            if(heldItem.quantity >= 0) { items.Add(heldItem); }
-            //otherwise stop holding item since we don't have any of it left
-            else { heldItem = null; }
         }
     }
 }

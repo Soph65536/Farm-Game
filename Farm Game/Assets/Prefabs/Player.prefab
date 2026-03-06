@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 200
   runSpeed: 300
-  jumpHeight: 200
+  jumpHeight: 6
   groundCheck: {fileID: 6191692346706161224}
   groundLayer:
     serializedVersion: 2

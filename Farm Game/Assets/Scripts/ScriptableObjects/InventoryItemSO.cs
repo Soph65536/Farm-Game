@@ -9,8 +9,8 @@ public class InventoryItem : ScriptableObject
 {
     //inspector editable variables
     [SerializeField] private String itemName;
-    [SerializeField] private Sprite icon;
+    [SerializeField] private Sprite sprite;
 
     public string Name { get { return itemName; } }
-    public Sprite Icon { get { return icon; } }
+    public Sprite Sprite { get { return sprite; } }
 }

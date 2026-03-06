@@ -4,9 +4,15 @@ using UnityEngine;
 
 namespace Inventory
 {
-    class InventoryMenuItem
+    public class InventoryMenuItem
     {
         public InventoryItem itemType;
         public int quantity;
+
+        public InventoryMenuItem(InventoryItem itemTypeParam) 
+        { 
+            itemType = itemTypeParam;
+            quantity = 1;
+        }
     }
 }
