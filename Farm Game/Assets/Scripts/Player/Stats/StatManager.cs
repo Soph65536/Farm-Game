@@ -18,8 +18,10 @@ public class StatManager : MonoBehaviour
     public int hunger { get; private set; }
     [SerializeField] private int maxHunger;
 
-    [SerializeField] private int maxLevel;
+    public int maxLevel;
     [SerializeField] private int[] expToLevelUp; //each index is each level
+
+    private SkillLevelDisplay skillLevelDisplay;
 
     public static StatManager Instance { get; private set; }
 
@@ -87,21 +89,36 @@ public class StatManager : MonoBehaviour
 
     private void LevelUp(SkillType skillType)
     {
+        //if havent alr found skillLevelDisplay then try find it
+        if(skillLevelDisplay == null) { skillLevelDisplay = FindObjectOfType<SkillLevelDisplay>(true); }
+
         switch (skillType)
         {
             case SkillType.Farming:
-                if (farmingLevel < maxLevel) { farmingLevel++; }
-                //display farming level up text on a timer, or play sound, or both
+                if (farmingLevel < maxLevel) 
+                { 
+                    farmingLevel++;
+                    skillLevelDisplay.UpdateSlider(SkillType.Farming, farmingLevel);
+                    //display farming level up text on a timer, or play sound, or both
+                }
                 break;
 
             case SkillType.Hunting:
-                if (huntingLevel < maxLevel) { huntingLevel++; }
+                if (huntingLevel < maxLevel) 
+                { 
+                    huntingLevel++;
+                    skillLevelDisplay.UpdateSlider(SkillType.Hunting, huntingLevel);
 
+                }
                 break;
 
             case SkillType.Foraging:
-                if (foragingLevel < maxLevel) { foragingLevel++; }
+                if (foragingLevel < maxLevel) 
+                { 
+                    foragingLevel++;
+                    skillLevelDisplay.UpdateSlider(SkillType.Foraging, foragingLevel);
 
+                }
                 break;
         }
     }

@@ -778,9 +778,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6326f4d42e2d4a80b9b2f012aa4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  farmingLevel: 0
+  huntingLevel: 0
+  foragingLevel: 0
+  farmingExp: 0
+  huntingExp: 0
+  foragingExp: 0
   maxHunger: 100
   maxLevel: 9
-  expToLevelUp: 320000006400000096000000c8000000fa0000002c0100005e01000090010000ffc99a3b
+  expToLevelUp: 00000000320000006400000096000000c8000000fa0000002c0100005e01000090010000ffc99a3b
 --- !u!4 &2109572013
 Transform:
   m_ObjectHideFlags: 0
