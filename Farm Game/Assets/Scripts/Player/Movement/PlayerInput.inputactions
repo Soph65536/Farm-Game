@@ -51,6 +51,33 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "WaterCrop",
+                    "type": "Button",
+                    "id": "abcda589-4d85-4dc7-b92e-98b4c1c55597",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "WeedCrop",
+                    "type": "Button",
+                    "id": "5f501b85-f090-4bcd-981b-7a4fb5d09bd1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HarvestCrop",
+                    "type": "Button",
+                    "id": "93e6fbca-1ebc-4c9a-a14c-46d982c93802",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "MenuInventory",
                     "type": "Button",
                     "id": "0949edc8-36b0-4160-aee7-f35c83e6c351",
@@ -404,6 +431,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "MenuMap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d73ae01-d8df-4a31-b452-c184547f2ae8",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WaterCrop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78e324d9-8730-4131-975e-ead255adb518",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WeedCrop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b922305d-bb35-49aa-bd80-7bce30217988",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HarvestCrop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

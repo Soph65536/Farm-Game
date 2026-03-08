@@ -14,7 +14,7 @@ public class SoilPlot : MonoBehaviour
 
     private float currentGrowth; //0 to 1 value
 
-    public bool readyToHarvest;
+    private bool readyToHarvest;
     public bool isWet;
     public bool hasWeeds;
 
@@ -39,6 +39,8 @@ public class SoilPlot : MonoBehaviour
     {
         currentGrowth += CalculateGrowthRate();
 
+        //add random small chance of weeds appearing
+
         //calculate model growth stage from currentgrowth
         cropObjectAppearance.SetGrowthState(Mathf.Clamp((int)(currentGrowth * 3), 0, 3)); //clamp stops number from going outside array bounds (incase ive messed up the math)
 
@@ -61,6 +63,8 @@ public class SoilPlot : MonoBehaviour
 
             currentCrop = null;
             currentGrowth = 0;
+
+            //animate player harvesting crop
         }
     }
 

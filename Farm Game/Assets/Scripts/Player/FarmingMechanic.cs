@@ -1,10 +1,54 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FarmingMechanic : MonoBehaviour
 {
     [SerializeField] private float maxPlantingDistance;
+
+    private void OnEnable()
+    {
+        Player.Instance.input.actions["WaterCrop"].performed += WaterCrop;
+        Player.Instance.input.actions["WeedCrop"].performed += WeedCrop;
+        Player.Instance.input.actions["HarvestCrop"].performed += HarvestCrop;
+    }
+
+    private void OnDisable()
+    {
+        Player.Instance.input.actions["WaterCrop"].performed -= WaterCrop;
+        Player.Instance.input.actions["WeedCrop"].performed -= WeedCrop;
+        Player.Instance.input.actions["HarvestCrop"].performed -= HarvestCrop;
+    }
+
+    private void WaterCrop(InputAction.CallbackContext context)
+    {
+        SoilPlot plantingPlot = FindNearestSoilPlot(false);
+        if (plantingPlot != null) 
+        { 
+            plantingPlot.isWet = true; 
+            //play watering animation
+        }
+    }
+
+    private void WeedCrop(InputAction.CallbackContext context)
+    {
+        SoilPlot plantingPlot = FindNearestSoilPlot(false);
+        if (plantingPlot != null) 
+        {
+            if (plantingPlot.hasWeeds)
+            {
+                plantingPlot.hasWeeds = false;
+                //play weeding animation
+            }
+        }
+    }
+
+    private void HarvestCrop(InputAction.CallbackContext context)
+    {
+        SoilPlot plantingPlot = FindNearestSoilPlot(false);
+        if(plantingPlot != null) { plantingPlot.RemoveCrop(); } //harvestable check is done in removecrop so dont need condition here
+    }
 
     public bool PlantSeed(Crop seed)
     {
