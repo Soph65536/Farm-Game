@@ -7,6 +7,9 @@ public class SoilPlot : MonoBehaviour
     const float wetMultiplier = 1.2f;
     const float weedMultiplier = 0.7f;
 
+    const float chanceOfWeeds = 7; //1/chanceOfWeeds-1 chance
+    const float wetDuration = 5; //time in second that crops stay wet for
+
     public Crop currentCrop { get; private set; }
 
     private GameObject cropObject;
@@ -18,6 +21,12 @@ public class SoilPlot : MonoBehaviour
     public bool isWet;
     public bool hasWeeds;
 
+    private WeedGenerator weedGenerator;
+
+    [SerializeField] private MeshRenderer soilMesh;
+    [SerializeField] private Material drySoilMaterial;
+    [SerializeField] private Material wetSoilMaterial;
+
     private void Awake()
     {
         currentCrop = null;
@@ -26,6 +35,10 @@ public class SoilPlot : MonoBehaviour
         readyToHarvest = false;
         isWet = false;
         hasWeeds = false;
+
+        weedGenerator = GetComponentInChildren<WeedGenerator>();
+
+        soilMesh.material = drySoilMaterial;
     }
 
     private float CalculateGrowthRate() //per minute
@@ -39,7 +52,12 @@ public class SoilPlot : MonoBehaviour
     {
         currentGrowth += CalculateGrowthRate();
 
-        //add random small chance of weeds appearing
+        //random small chance of weeds appearing
+        if ((int)Random.Range(1, chanceOfWeeds) == 1)
+        { 
+            weedGenerator.SpawnWeed();
+            hasWeeds = true;
+        }
 
         //calculate model growth stage from currentgrowth
         cropObjectAppearance.SetGrowthState(Mathf.Clamp((int)(currentGrowth * 3), 0, 3)); //clamp stops number from going outside array bounds (incase ive messed up the math)
@@ -77,6 +95,30 @@ public class SoilPlot : MonoBehaviour
         cropObjectAppearance.SetGrowthState(0);
 
         //run plant growth every minute
-        InvokeRepeating(nameof(GrowPlant), 60, 60);
+        InvokeRepeating(nameof(GrowPlant), 1, 1);
+    }
+
+    public void WaterCrop()
+    {
+        StopCoroutine(nameof(WateringTimer)); //if doing watering timer then stop it because its reset
+
+        isWet = true;
+        soilMesh.material = wetSoilMaterial;
+
+        StartCoroutine(nameof(WateringTimer));
+    }
+
+    private IEnumerator WateringTimer()
+    {
+        yield return new WaitForSecondsRealtime(wetDuration);
+        
+        isWet = false;
+        soilMesh.material = drySoilMaterial;
+    }
+
+    public void RemoveWeeds()
+    {
+        weedGenerator.ClearWeeds();
+        hasWeeds = false;
     }
 }

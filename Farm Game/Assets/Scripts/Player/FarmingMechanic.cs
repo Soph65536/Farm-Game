@@ -25,8 +25,8 @@ public class FarmingMechanic : MonoBehaviour
     {
         SoilPlot plantingPlot = FindNearestSoilPlot(false);
         if (plantingPlot != null) 
-        { 
-            plantingPlot.isWet = true; 
+        {
+            plantingPlot.WaterCrop();
             //play watering animation
         }
     }
@@ -38,7 +38,7 @@ public class FarmingMechanic : MonoBehaviour
         {
             if (plantingPlot.hasWeeds)
             {
-                plantingPlot.hasWeeds = false;
+                plantingPlot.RemoveWeeds();
                 //play weeding animation
             }
         }
