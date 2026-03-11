@@ -1,0 +1,22 @@
+using Inventory;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MerchantInventory : BaseInventory
+{
+    [SerializeField] private InventoryItem[] itemsToAdd;
+
+    private void Start()
+    {
+        items = new List<InventoryMenuItem>();
+        inventoryItemHolder = MerchantMenu.Instance.merchantItems;
+
+        Invoke(nameof(AddInventoryItems), 0.5f);
+    }
+
+    private void AddInventoryItems()
+    {
+        foreach (InventoryItem item in itemsToAdd) { AddItem(item); }
+    }
+}

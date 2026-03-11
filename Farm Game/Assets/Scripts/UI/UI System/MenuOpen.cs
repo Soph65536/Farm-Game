@@ -20,17 +20,22 @@ public class MenuOpen : MonoBehaviour
 
     private void EnableInput()
     {
-        Player.Instance.input.actions[inputAction].performed += ToggleInventory;
+        Player.Instance.input.actions[inputAction].performed += ToggleMenu;
     }
 
     private void OnDisable()
     {
-        Player.Instance.input.actions[inputAction].performed -= ToggleInventory;
+        Player.Instance.input.actions[inputAction].performed -= ToggleMenu;
     }
 
-    private void ToggleInventory(InputAction.CallbackContext context)
+    private void ToggleMenu(InputAction.CallbackContext context)
     {
         if(UIManager.Instance.currentMenu == thisMenu) { UIManager.Instance.ExitMenu(); }
         else { UIManager.Instance.EnterMenu(thisMenu); }
+    }
+
+    public void OpenMenu()
+    {
+        UIManager.Instance.EnterMenu(thisMenu);
     }
 }

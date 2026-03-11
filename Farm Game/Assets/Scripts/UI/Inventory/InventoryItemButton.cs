@@ -26,6 +26,7 @@ public class InventoryItemButton : MonoBehaviour
         text.text = menuItem.quantity.ToString();
     }
 
+    //inventory functions
     public void Hold()
     {
         Player.Instance.inventory.SetHeldItem(menuItem);
@@ -35,5 +36,24 @@ public class InventoryItemButton : MonoBehaviour
     public void Discard()
     {
         Player.Instance.inventory.RemoveItem(menuItem);
+    }
+
+    //merchant functions
+    public void Sell()
+    {
+        StatManager.Instance.ChangeMoney(menuItem.itemType.Value);
+        Player.Instance.inventory.RemoveItem(menuItem);
+        MerchantMenu.Instance.currentMerchant.AddItem(menuItem.itemType);
+
+        MerchantMenu.Instance.UpdateInventoryHolders();
+    }
+
+    public void Buy()
+    {
+        StatManager.Instance.ChangeMoney(-menuItem.itemType.Value);
+        Player.Instance.inventory.AddItem(menuItem.itemType);
+        MerchantMenu.Instance.currentMerchant.RemoveItem(menuItem);
+
+        MerchantMenu.Instance.UpdateInventoryHolders();
     }
 }

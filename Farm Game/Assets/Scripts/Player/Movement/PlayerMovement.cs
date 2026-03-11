@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Values")]
     [SerializeField] private float walkSpeed;
-    [SerializeField] private float runSpeed;
+    [SerializeField] private float sprintSpeed;
     [SerializeField] private float jumpHeight;
     [SerializeField] private GameObject groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        if (walkSpeed == 0 || runSpeed == 0 || jumpHeight == 0) { Debug.Log("Player movement values not set. Plase change in inspector."); }
+        if (walkSpeed == 0 || sprintSpeed == 0 || jumpHeight == 0) { Debug.Log("Player movement values not set. Plase change in inspector."); }
 
         //set inital values for vars
         moveSpeed = walkSpeed;
@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
         movementVelocity = Vector3.zero;
         rotation = Vector3.zero;
         grounded = false;
+
+        InvokeRepeating(nameof(CheckForHungerDecrease), 1, 1);
     }
 
     private void OnEnable()
@@ -68,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
         Gravity();
     }
 
+
     private void Gravity()
     {
         grounded = Physics.OverlapBox(groundCheck.transform.position, groundCheck.transform.localScale / 2, Quaternion.identity, groundLayer).Length > 0;
@@ -95,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprint(InputAction.CallbackContext context)
     {
-        moveSpeed = context.performed ? runSpeed : walkSpeed;
+        moveSpeed = context.performed ? sprintSpeed : walkSpeed;
 
         Player.Instance.animator.SetBool("Sprinting", context.performed);
     }
@@ -107,6 +110,17 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
 
             Player.Instance.animator.SetTrigger("StartJump");
+        }
+    }
+
+
+    private void CheckForHungerDecrease()
+    {
+        //decrease hunger based on if walking or sprinting
+        if(movement != Vector2.zero)
+        {
+            bool sprinting = moveSpeed == sprintSpeed;
+            StatManager.Instance.DecreaseHunger(sprinting ? 2 : 1);
         }
     }
 }

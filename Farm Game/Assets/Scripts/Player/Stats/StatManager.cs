@@ -15,13 +15,16 @@ public class StatManager : MonoBehaviour
     private int huntingExp;
     private int foragingExp;
 
+    public int money { get; private set; }
+    [SerializeField] private int startingMoney = 20;
     public int hunger { get; private set; }
-    [SerializeField] private int maxHunger;
+    public int maxHunger;
 
     public int maxLevel;
     [SerializeField] private int[] expToLevelUp; //each index is each level
 
     private SkillLevelDisplay skillLevelDisplay;
+    private HUD hud;
 
     public static StatManager Instance { get; private set; }
 
@@ -41,11 +44,13 @@ public class StatManager : MonoBehaviour
         huntingExp = 0;
         foragingExp = 0;
 
+        money = startingMoney;
         hunger = maxHunger;
 
         if (maxLevel < 0) { maxLevel = 2; }
         if (expToLevelUp.Length != maxLevel) { Array.Resize(ref expToLevelUp, maxLevel); }
     }
+
 
     public void SetBaseStats(int farming, int hunting, int foraging)
     {
@@ -121,5 +126,23 @@ public class StatManager : MonoBehaviour
                 }
                 break;
         }
+    }
+
+
+    public void ChangeMoney(int amount) //set amount to negativ for money subtract
+    {
+        money += amount;
+
+        if (hud == null) { hud = Player.Instance.GetComponentInChildren<HUD>(true); }
+        hud.UpdateMoneyValue();
+    }
+
+    public void DecreaseHunger(int amount)
+    {
+        //decrease hunger then update hud
+        hunger -= amount;
+
+        if (hud == null) { hud = Player.Instance.GetComponentInChildren<HUD>(true); }
+        hud.UpdateHungerSlider();
     }
 }
