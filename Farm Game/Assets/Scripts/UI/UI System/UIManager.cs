@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
 
         if (currentMenu == newMenu || currentMenu != null) { return; }
 
-        if (Player.Instance != null) { Player.Instance.DisableInput(); }
+        if (Player.Instance != null) { Player.Instance.DisableInput(); Player.Instance.hud.SetActive(false); }
 
         currentMenu = newMenu;
         currentMenu.Open();
@@ -60,7 +60,7 @@ public class UIManager : MonoBehaviour
     {
         if (currentMenu == null) { return; }
 
-        if (Player.Instance != null) { Player.Instance.EnableInput(); }
+        if (Player.Instance != null) { Player.Instance.EnableInput(); Player.Instance.hud.SetActive(true); }
 
         currentMenu.Close();
         currentMenu = null;

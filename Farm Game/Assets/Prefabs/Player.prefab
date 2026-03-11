@@ -522,6 +522,7 @@ MonoBehaviour:
   foraging: {fileID: 0}
   animator: {fileID: 0}
   model: {fileID: 7198656072914435259}
+  hud: {fileID: 4023067397606115951}
 --- !u!1 &3408894307134929816
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984103b0ecb7f94182a96ea0729c21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyValue: {fileID: 0}
+  moneyValue: {fileID: 9077378517878099064}
   hungerSlider: {fileID: 4678609316585652585}
 --- !u!1 &5192648190746881127
 GameObject:

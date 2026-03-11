@@ -26,8 +26,6 @@ public class MerchantMenu : MonoBehaviour
         {
             Instance = this;
         }
-
-        Invoke(nameof(UpdateInventoryHolders), 0.6f);
     }
 
     private void OnEnable()

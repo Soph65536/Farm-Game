@@ -19,4 +19,11 @@ public class MerchantInventory : BaseInventory
     {
         foreach (InventoryItem item in itemsToAdd) { AddItem(item); }
     }
+
+    public void EnterMerchantMenu()
+    {
+        //set merchant to this then open the merchant menu
+        MerchantMenu.Instance.SetMerchant(this);
+        UIManager.Instance.EnterMenu("merchant");
+    }
 }
