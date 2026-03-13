@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SoilPlot : MonoBehaviour
 {
+    const float plantGrowthUpdateFrequency = 3;
+
     const float wetMultiplier = 1.2f;
     const float weedMultiplier = 0.7f;
 
@@ -95,7 +97,7 @@ public class SoilPlot : MonoBehaviour
         cropObjectAppearance.SetGrowthState(0);
 
         //run plant growth every minute
-        InvokeRepeating(nameof(GrowPlant), 1, 1);
+        InvokeRepeating(nameof(GrowPlant), plantGrowthUpdateFrequency, plantGrowthUpdateFrequency);
     }
 
     public void WaterCrop()
