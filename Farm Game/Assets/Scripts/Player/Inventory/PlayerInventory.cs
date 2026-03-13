@@ -9,13 +9,15 @@ public class PlayerInventory : BaseInventory
     const int maxItems = 32;
 
     private InventoryMenuItem heldItem;
-
     private Menu inventoryMenu;
+
+    private HUD hud;
 
     private void SetInventoryMenus()
     {
         inventoryMenu = UIManager.Instance.FindMenuByName("inventory");
         inventoryItemHolder = inventoryMenu.GetComponentInChildren<InventoryItemHolder>(true);
+        hud = Player.Instance.hud.GetComponent<HUD>();
     }
 
 
@@ -39,6 +41,7 @@ public class PlayerInventory : BaseInventory
     public void SetHeldItem(InventoryMenuItem menuItem)
     {
         heldItem = menuItem;
+        hud.UpdateHeldItem(menuItem == null? null : menuItem.itemType.Sprite);
     }
 
     //runs when use item input is pressed
@@ -56,6 +59,7 @@ public class PlayerInventory : BaseInventory
                 if (Player.Instance.farming.PlantSeed((Crop)heldItem.itemType))
                 {
                     RemoveItem(heldItem);
+                    SetHeldItem(null);
                     //plant seed animation
                 }
             }

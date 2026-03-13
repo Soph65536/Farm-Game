@@ -133,7 +133,7 @@ public class StatManager : MonoBehaviour
     {
         money += amount;
 
-        if (hud == null) { hud = Player.Instance.GetComponentInChildren<HUD>(true); }
+        if (hud == null) { hud = Player.Instance.hud.GetComponent<HUD>(); }
         hud.UpdateMoneyValue();
     }
 
@@ -142,7 +142,7 @@ public class StatManager : MonoBehaviour
         //decrease hunger then update hud
         hunger -= amount;
 
-        if (hud == null) { hud = Player.Instance.GetComponentInChildren<HUD>(true); }
+        if (hud == null) { hud = Player.Instance.hud.GetComponent<HUD>(); }
         hud.UpdateHungerSlider();
     }
 }

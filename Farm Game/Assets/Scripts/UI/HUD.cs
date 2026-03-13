@@ -8,6 +8,7 @@ public class HUD : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI moneyValue;
     [SerializeField] private Slider hungerSlider;
+    [SerializeField] private Image heldItemImage;
 
     private void Awake()
     {
@@ -15,6 +16,8 @@ public class HUD : MonoBehaviour
 
         hungerSlider.maxValue = StatManager.Instance.maxHunger;
         UpdateHungerSlider();
+
+        UpdateHeldItem(null);
     }
 
     public void UpdateMoneyValue()
@@ -25,5 +28,11 @@ public class HUD : MonoBehaviour
     public void UpdateHungerSlider()
     {
         hungerSlider.value = StatManager.Instance.hunger;
+    }
+
+    public void UpdateHeldItem(Sprite sprite)
+    {
+        heldItemImage.sprite = sprite;
+        heldItemImage.enabled = sprite != null; //set to inactive if no sprite to show
     }
 }
