@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457df3798c943db44a95fe19bcfaa08a, type: 3}
+  m_Name: StartingQuest
+  m_EditorClassIdentifier: 
+  questName: The Beginning
+  questDescription: Grow a carrot
+  itemsToSubmit:
+  - {fileID: 11400000, guid: f794e4e9b51c4e742869d7f6da03cf4d, type: 2}
+  - {fileID: 11400000, guid: 6f63ffe6f0844674881eb989bbd962a0, type: 2}
+  completionEvent: merchantmenugay

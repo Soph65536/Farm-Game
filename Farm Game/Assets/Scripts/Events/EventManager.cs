@@ -40,6 +40,7 @@ public class EventManager : MonoBehaviour
     {
         Event newEvent = FindEventByName(eventName);
 
-        newEvent.Run();
+        if (newEvent == null) { Debug.Log("Event " + eventName + " not found"); }
+        else { newEvent.Run(); }
     }
 }
