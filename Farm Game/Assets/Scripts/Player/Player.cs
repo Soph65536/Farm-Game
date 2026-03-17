@@ -62,7 +62,6 @@ public class Player : MonoBehaviour
 
     public void DisableInput()
     {
-        Debug.Log(input.actions);
         foreach (InputAction action in input.actions)
         {
             Debug.Log(action.name);

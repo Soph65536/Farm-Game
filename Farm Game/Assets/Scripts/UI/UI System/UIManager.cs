@@ -40,6 +40,8 @@ public class UIManager : MonoBehaviour
     {
         if(currentMenu == newMenu || currentMenu != null) { return; }
 
+        if (Player.Instance != null) { Player.Instance.DisableInput(); Player.Instance.hud.SetActive(false); }
+
         currentMenu = newMenu;
         currentMenu.Open();
     }
@@ -64,5 +66,14 @@ public class UIManager : MonoBehaviour
 
         currentMenu.Close();
         currentMenu = null;
+    }
+
+    //for game reset
+    public void DestroyAllMenus()
+    {
+        foreach(Menu menu in menus)
+        {
+            Destroy(menu.gameObject);
+        }
     }
 }
