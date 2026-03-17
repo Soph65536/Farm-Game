@@ -116,6 +116,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 8.489557
       objectReference: {fileID: 0}
+    - target: {fileID: 3217376487102752062, guid: 9a0be35531eb92148bbba39b9025bf10, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -398559599610122945, guid: 9a0be35531eb92148bbba39b9025bf10, type: 3}
     - target: {fileID: 3248127304944491458, guid: 9a0be35531eb92148bbba39b9025bf10, type: 3}
       propertyPath: m_LocalPosition.y
       value: 17.36208
