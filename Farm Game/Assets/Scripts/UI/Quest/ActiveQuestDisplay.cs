@@ -9,7 +9,7 @@ public class ActiveQuestDisplay : MonoBehaviour
     [SerializeField] private GameObject questContainer;
     [SerializeField] private GameObject questViewerButtonPrefab;
 
-    [SerializeField] private TextMeshProUGUI DescriptionText;
+    [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private TextMeshProUGUI itemsToSubmitText;
     [SerializeField] private GameObject submittableItemsContainer;
     [SerializeField] private GameObject submittableItemButtonPrefab;
@@ -37,12 +37,12 @@ public class ActiveQuestDisplay : MonoBehaviour
 
         if (quest == null)
         {
-            DescriptionText.text = "Click on a quest to display it here.";
+            descriptionText.text = "Click on a quest to display it here.";
             itemsToSubmitText.enabled = false;
             return;
         }
 
-        DescriptionText.text = quest.QuestDescription;
+        descriptionText.text = quest.QuestDescription;
         itemsToSubmitText.enabled = true;
 
         foreach(InventoryItem item in quest.ItemsToSubmit)

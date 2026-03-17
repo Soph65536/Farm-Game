@@ -9,7 +9,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(MultiMouseClickButton))]
 public class InventoryItemButton : MonoBehaviour
 {
-    private InventoryMenuItem menuItem;
+    protected InventoryMenuItem menuItem;
 
     private Image image;
     private TextMeshProUGUI text;
@@ -36,24 +36,5 @@ public class InventoryItemButton : MonoBehaviour
     public void Discard()
     {
         Player.Instance.inventory.RemoveItem(menuItem);
-    }
-
-    //merchant functions
-    public void Sell()
-    {
-        StatManager.Instance.ChangeMoney(menuItem.itemType.Value);
-        Player.Instance.inventory.RemoveItem(menuItem);
-        MerchantMenu.Instance.currentMerchant.AddItem(menuItem.itemType);
-
-        MerchantMenu.Instance.UpdateInventoryHolders();
-    }
-
-    public void Buy()
-    {
-        StatManager.Instance.ChangeMoney(-menuItem.itemType.Value);
-        Player.Instance.inventory.AddItem(menuItem.itemType);
-        MerchantMenu.Instance.currentMerchant.RemoveItem(menuItem);
-
-        MerchantMenu.Instance.UpdateInventoryHolders();
     }
 }

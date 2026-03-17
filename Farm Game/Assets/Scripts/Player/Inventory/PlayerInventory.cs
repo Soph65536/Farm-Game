@@ -38,6 +38,11 @@ public class PlayerInventory : BaseInventory
     }
 
 
+    public bool CheckForItem(InventoryItem item)
+    {
+        return FindItemIndex(item) != -2;
+    }
+
     public void SetHeldItem(InventoryMenuItem menuItem)
     {
         heldItem = menuItem;

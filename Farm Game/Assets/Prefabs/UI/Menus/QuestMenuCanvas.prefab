@@ -396,7 +396,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questContainer: {fileID: 4587308843162317341}
   questViewerButtonPrefab: {fileID: 6287537757422686413, guid: 846f6760a1f3fe747a75a5ee2b3ec659, type: 3}
-  DescriptionText: {fileID: 2385734959399702758}
+  descriptionText: {fileID: 2385734959399702758}
   itemsToSubmitText: {fileID: 8517334400045600780}
   submittableItemsContainer: {fileID: 7581502342468380136}
   submittableItemButtonPrefab: {fileID: 730346266830171687, guid: 417f4b7839fe86e449487538c028931c, type: 3}
