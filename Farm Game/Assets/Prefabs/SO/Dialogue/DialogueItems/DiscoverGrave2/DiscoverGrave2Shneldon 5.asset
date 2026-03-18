@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb02e8c57bb6be640a5ffbcff69d6b78, type: 3}
-  m_Name: CSIntro
+  m_Name: DiscoverGrave2Shneldon 5
   m_EditorClassIdentifier: 
-  NameText: ???
+  NameText: Shneldon Snail
   Icon: {fileID: 0}
   IsPlayerTextOption: 0
-  DialogueText: Heyo this is the character select bit pretend this is dialogue
+  DialogueText: They be known around these parts as *Imago*.
   EventText: 

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: DiscoverGrave1
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: e36f9669e3da79c42965583227c8771b
+    dialogueItem: {fileID: 11400000, guid: 7792a96d3b1499841815981120b46fd4, type: 2}
+    position: {x: 280.80002, y: 225.6}
+    previousguids: []
+  - guid: 0a1981ac30ed2d048b1f69352e6f6d0c
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 647.2, y: 104}
+    previousguids:
+    - e36f9669e3da79c42965583227c8771b
+  - guid: 0fb47f039f0ebc642a733f0f5af96161
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 1352.7999, y: 104}
+    previousguids:
+    - 1780727eeb6415f47942ec83f85b3451
+  - guid: d1d82863354b74a499010c7e377efa2d
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 2100, y: 104}
+    previousguids:
+    - a73fb39043354ea4a8a8b7e25b503801
+  - guid: 1780727eeb6415f47942ec83f85b3451
+    dialogueItem: {fileID: 11400000, guid: de6a7b8d00aeb514880497fe33c7f040, type: 2}
+    position: {x: 1003.2, y: 210.40001}
+    previousguids:
+    - 0a1981ac30ed2d048b1f69352e6f6d0c
+  - guid: a73fb39043354ea4a8a8b7e25b503801
+    dialogueItem: {fileID: 11400000, guid: f8c548abe9fae96488171504a1ee7d49, type: 2}
+    position: {x: 1727.2, y: 210.40001}
+    previousguids:
+    - 0fb47f039f0ebc642a733f0f5af96161
+  - guid: c686e14f891975544a5eb12e2b0b85fc
+    dialogueItem: {fileID: 11400000, guid: fbfcf22024ff8eb468cff9e9879cf8df, type: 2}
+    position: {x: 2550.4, y: 210.40001}
+    previousguids:
+    - d1d82863354b74a499010c7e377efa2d
+  - guid: 7c66d7d132ca40542bf5497460a98d9b
+    dialogueItem: {fileID: 11400000, guid: fda4f6d77874bcc4793081b913ca2ed1, type: 2}
+    position: {x: 2972, y: 104}
+    previousguids:
+    - c686e14f891975544a5eb12e2b0b85fc

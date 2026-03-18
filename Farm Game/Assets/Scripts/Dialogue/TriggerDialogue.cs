@@ -16,15 +16,20 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Start()
     {
-        if (runOnAwake) { Invoke(nameof(RunDialogue), 0.5f); } //build wants to run this start function before dialogue handler is setup so must invoke this
+        if (runOnAwake) { InvokeDialogue(0.5f); } //build wants to run this start function before dialogue handler is setup so must invoke this
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && !runOnAwake) { RunDialogue(); }
+        if (other.GetComponent<Player>() != null && !runOnAwake) { RunDialogue(); }
     }
 
-    public void RunDialogue()
+    public void InvokeDialogue(float delay)
+    {
+        Invoke(nameof(RunDialogue), delay);
+    }
+
+    private void RunDialogue()
     {
         dialogueMenu = UIManager.Instance.FindMenuByName("dialogue");
         dialogueMenu.GetComponentInChildren<DialogueHandler>(true).conversationAsset = conversationAsset;

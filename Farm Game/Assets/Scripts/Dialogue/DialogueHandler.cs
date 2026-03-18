@@ -30,7 +30,7 @@ public class DialogueHandler : MonoBehaviour
         ClearPlayerDialogueOptions();
 
         //reset camera angle
-        CameraController.Instance.FocusOnPlayer();
+        if (CameraController.Instance != null) { CameraController.Instance.FocusOnPlayer(); }
 
         //close this menu
         UIManager.Instance.ExitMenu();

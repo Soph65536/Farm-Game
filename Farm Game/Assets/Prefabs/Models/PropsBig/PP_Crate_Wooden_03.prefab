@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3909283678591738039}
   - component: {fileID: 8252516825606471465}
   - component: {fileID: 8593212839074876171}
-  - component: {fileID: 2594661794947705081}
+  - component: {fileID: -7635535441722104709}
   m_Layer: 0
   m_Name: PP_Crate_Wooden_03
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2594661794947705081
-MeshCollider:
+--- !u!65 &-7635535441722104709
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7755929006097282321, guid: 3aff48fd78e9680478afdfd2f03682c4, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.60000145, y: 0.6000002, z: 0.6000016}
+  m_Center: {x: 0.000000014901161, y: 0.29999813, z: -0.000000044703484}
