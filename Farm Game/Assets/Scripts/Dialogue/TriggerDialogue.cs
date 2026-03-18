@@ -24,7 +24,7 @@ public class TriggerDialogue : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && !runOnAwake) { RunDialogue(); }
     }
 
-    private void RunDialogue()
+    public void RunDialogue()
     {
         dialogueMenu = UIManager.Instance.FindMenuByName("dialogue");
         dialogueMenu.GetComponentInChildren<DialogueHandler>(true).conversationAsset = conversationAsset;
@@ -32,7 +32,7 @@ public class TriggerDialogue : MonoBehaviour
         UIManager.Instance.EnterMenu(dialogueMenu);
 
         //if camerachange, change camera to new location
-        //if (HasCameraChange) { other.GetComponentInChildren<CameraController>().ChangeCameraFocus(NewCameraLocation); }
+        if (HasCameraChange) { CameraController.Instance.FocusOnObject(NewCameraLocation); }
 
         Destroy(gameObject);
     }

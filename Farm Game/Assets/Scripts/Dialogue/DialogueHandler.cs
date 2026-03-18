@@ -29,6 +29,9 @@ public class DialogueHandler : MonoBehaviour
     {
         ClearPlayerDialogueOptions();
 
+        //reset camera angle
+        CameraController.Instance.FocusOnPlayer();
+
         //close this menu
         UIManager.Instance.ExitMenu();
     }
@@ -57,7 +60,7 @@ public class DialogueHandler : MonoBehaviour
 
         //get new dialogue!!
         currentData = null; //set currentdata to empty
-        foreach(Transform child in PlayerTextContainer.transform) { Destroy(child.gameObject); } //remove all children within player text
+        ClearPlayerDialogueOptions();
 
         foreach (DialogueSaveData dialogueData in dialogueTreeData.dialogueData)
         {
