@@ -10,13 +10,12 @@ public class NPCTextDisplay : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI NPCNameText;
     [SerializeField] private TextMeshProUGUI NPCSpeechText;
-    private Image NPCImage;
+    [SerializeField] private Image NPCImage;
+    [SerializeField] private Sprite DefaultNPCIcon;
 
     private void Awake()
     {
         dialogueHandler = GetComponentInParent<DialogueHandler>();
-
-        NPCImage = GetComponentInChildren<Image>();
     }
 
     private void Update()
@@ -24,5 +23,6 @@ public class NPCTextDisplay : MonoBehaviour
         NPCNameText.text = dialogueHandler.currentData.dialogueItem.NameTextRO;
         NPCSpeechText.text = dialogueHandler.currentData.dialogueItem.DialogueText;
         NPCImage.sprite = dialogueHandler.currentData.dialogueItem.IconRO;
+        if (!NPCImage.sprite) { NPCImage.sprite = DefaultNPCIcon; }
     }
 }

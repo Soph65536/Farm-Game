@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3913262091131405903}
   - component: {fileID: 5152523616110241060}
   - component: {fileID: 1364204888668321724}
-  - component: {fileID: 1435882880362162591}
+  - component: {fileID: 8225656820037056594}
   m_Layer: 5
   m_Name: PlayerSellingItem
   m_TagString: Untagged
@@ -93,7 +93,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1435882880362162591}
+      - m_Target: {fileID: 8225656820037056594}
         m_TargetAssemblyTypeName: InventoryItemButton, Assembly-CSharp
         m_MethodName: Sell
         m_Mode: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
   rightClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1435882880362162591
+--- !u!114 &8225656820037056594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 730346266830171687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d8fb377e40f528498f35cab5f04a4d7, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2bf21b8329de64692d21f1f1ce86a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6175826470124942070

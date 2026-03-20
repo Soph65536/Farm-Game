@@ -1864,6 +1864,7 @@ MonoBehaviour:
   dialogueMenu: {fileID: 0}
   conversationAsset: CharacterSelect
   runOnAwake: 1
+  destroyAfterRun: 0
   HasCameraChange: 0
   NewCameraLocation: {fileID: 0}
 --- !u!4 &1176178662

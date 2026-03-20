@@ -7,6 +7,7 @@ public class TriggerDialogue : MonoBehaviour
     public Menu dialogueMenu;
     [SerializeField] private string conversationAsset;
     [SerializeField] private bool runOnAwake;
+    [SerializeField] private bool destroyAfterRun;
 
     [Header("Changes Camera Angle?")]
     [SerializeField] private bool HasCameraChange;
@@ -39,6 +40,6 @@ public class TriggerDialogue : MonoBehaviour
         //if camerachange, change camera to new location
         if (HasCameraChange) { CameraController.Instance.FocusOnObject(NewCameraLocation); }
 
-        Destroy(gameObject);
+        if (destroyAfterRun) { Destroy(gameObject); }
     }
 }

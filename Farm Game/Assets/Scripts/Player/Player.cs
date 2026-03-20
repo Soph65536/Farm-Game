@@ -64,7 +64,6 @@ public class Player : MonoBehaviour
     {
         foreach (InputAction action in input.actions)
         {
-            Debug.Log(action.name);
             //if action name doesnt contain menu then its an action and should be disabled
             if (!(action.name.Contains("Menu")))
             {
