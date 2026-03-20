@@ -51,6 +51,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "TeleportFarm",
+                    "type": "Button",
+                    "id": "972c74ec-77d0-4001-a199-c5eabb9b9c16",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "WaterCrop",
                     "type": "Button",
                     "id": "abcda589-4d85-4dc7-b92e-98b4c1c55597",
@@ -464,6 +473,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "HarvestCrop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "433ab5f9-75c0-47ab-9a24-2719271300dd",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportFarm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

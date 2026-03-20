@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerInventory))]
 [RequireComponent(typeof(FarmingMechanic))]
+[RequireComponent(typeof(FarmTeleport))]
 [RequireComponent(typeof(HuntingMechanic))]
 [RequireComponent(typeof(ForagingMechanic))]
 public class Player : MonoBehaviour
