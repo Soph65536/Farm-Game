@@ -20,6 +20,11 @@ public class MerchantInventory : BaseInventory
         foreach (InventoryItem item in itemsToAdd) { AddItem(item); }
     }
 
+    public void InvokeMerchantMenu(float delay)
+    {
+        Invoke(nameof(EnterMerchantMenu), delay);
+    }
+
     public void EnterMerchantMenu()
     {
         //set merchant to this then open the merchant menu

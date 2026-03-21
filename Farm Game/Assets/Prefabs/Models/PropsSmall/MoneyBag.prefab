@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7484414017150732509}
   - component: {fileID: 5796732442718390136}
   - component: {fileID: 8617310474371249074}
-  - component: {fileID: 8107370186646647439}
   m_Layer: 0
   m_Name: MoneyBag
   m_TagString: Untagged
@@ -84,24 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8107370186646647439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7824487893049086567}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.18991004, y: 0.22780667, z: 0.15164873}
-  m_Center: {x: 0, y: 0.113903336, z: 0.00200741}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457df3798c943db44a95fe19bcfaa08a, type: 3}
+  m_Name: TrombusQuest
+  m_EditorClassIdentifier: 
+  questName: Trombus's Request
+  questDescription: 'Trombus toad has been lost for so long that they''re starving!
+    Grow them a carrot using some carrot seeds. '
+  itemsToSubmit:
+  - {fileID: 11400000, guid: f044558e7dfc9794781e7d3f9885176e, type: 2}
+  completionEvent: trombustoadquestcomplete1

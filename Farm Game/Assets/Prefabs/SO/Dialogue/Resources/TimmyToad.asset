@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: TimmyToad
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: 2691a06911c82f24a9a0201751dfbbe8
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 695, y: 204}
+    previousguids:
+    - e3ceca058917ec84fadc914431354b2f
+  - guid: 95b53d51e3e13844ba42e025c253e1bc
+    dialogueItem: {fileID: 11400000, guid: 82f28b869cdb1f847a8ffebf78cdb690, type: 2}
+    position: {x: 1017, y: 266}
+    previousguids:
+    - 2691a06911c82f24a9a0201751dfbbe8
+  - guid: 8b67a0ff9ebff4d42bd993d7fd90579f
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 1375, y: 204}
+    previousguids:
+    - 95b53d51e3e13844ba42e025c253e1bc
+  - guid: 6ac7d39354a34494791ffda12496d2ab
+    dialogueItem: {fileID: 11400000, guid: cc68febefa2b97c4e953e3ba90415678, type: 2}
+    position: {x: 1709, y: 291}
+    previousguids:
+    - 8b67a0ff9ebff4d42bd993d7fd90579f
+  - guid: 33d199315cd2b6c458d19f25347d45f0
+    dialogueItem: {fileID: 11400000, guid: c601c32861f83424c931aaba2d5b50e3, type: 2}
+    position: {x: 2077, y: 220}
+    previousguids:
+    - 6ac7d39354a34494791ffda12496d2ab
+  - guid: e3ceca058917ec84fadc914431354b2f
+    dialogueItem: {fileID: 11400000, guid: d8c54139b13318f4bb315b1513947abc, type: 2}
+    position: {x: 334, y: 277}
+    previousguids: []

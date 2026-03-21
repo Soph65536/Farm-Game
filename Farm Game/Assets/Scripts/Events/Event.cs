@@ -20,6 +20,14 @@ public class Event : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        if (EventManager.Instance.FindEventByName(eventName) == null)
+        {
+            EventManager.Instance.events.Add(this);
+        }
+    }
+
     private void OnDisable()
     {
         //remove this from events if it gets disabled/removed

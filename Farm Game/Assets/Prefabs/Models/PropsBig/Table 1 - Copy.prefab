@@ -178,7 +178,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tablecloth
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1595656715221852712, guid: e43423a1e63d4684693454c35112be14, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

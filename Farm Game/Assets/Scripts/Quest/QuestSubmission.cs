@@ -6,6 +6,11 @@ public class QuestSubmission : MonoBehaviour
 {
     [SerializeField] private Quest questToSubmit;
 
+    public void InvokeQuestSubmit(float delay)
+    {
+        Invoke(nameof(OpenQuestSubmit), delay);
+    }
+
     public void OpenQuestSubmit()
     {
         if (QuestManager.Instance.activeQuests.Contains(questToSubmit)) //if been given this quest then open submit menu

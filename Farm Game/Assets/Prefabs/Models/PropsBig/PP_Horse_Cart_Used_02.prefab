@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 297388145503514369}
   - component: {fileID: 6128998012060399050}
   - component: {fileID: 1803710372477303553}
-  - component: {fileID: 6666630149647622067}
   m_Layer: 0
   m_Name: PP_Horse_Cart_Used_02_Wheels
   m_TagString: Untagged
@@ -84,28 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6666630149647622067
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4906819143109824786}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2411906990123087064, guid: bbe5a9d802a37f740b65d9ab3b3956a2, type: 3}
 --- !u!1 &8532955857504993413
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +94,7 @@ GameObject:
   - component: {fileID: 4075891144327789619}
   - component: {fileID: 3973356896831288770}
   - component: {fileID: 8834443723270644806}
-  - component: {fileID: 9156730711986126868}
+  - component: {fileID: 8867784303107284878}
   m_Layer: 0
   m_Name: PP_Horse_Cart_Used_02
   m_TagString: Untagged
@@ -191,8 +168,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &9156730711986126868
-MeshCollider:
+--- !u!65 &8867784303107284878
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -209,7 +186,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8620738174939055741, guid: bbe5a9d802a37f740b65d9ab3b3956a2, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 6.6250486, y: 1.9, z: 2.5656471}
+  m_Center: {x: -1.2368879, y: -0.15, z: -0.004090607}

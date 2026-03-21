@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: TrombusToad2
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: 680a95c0b22b4f649a07f8843ed37977
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 572, y: 132}
+    previousguids:
+    - fc5643d63ee6a1d43bc92202312e196d
+  - guid: bbfa5d33fa6c909498dcef7ed0ef3412
+    dialogueItem: {fileID: 11400000, guid: 808e7a62a1d1ce4438e12c4b58f19604, type: 2}
+    position: {x: 866, y: 242}
+    previousguids:
+    - 680a95c0b22b4f649a07f8843ed37977
+  - guid: fc5643d63ee6a1d43bc92202312e196d
+    dialogueItem: {fileID: 11400000, guid: aac56331483f74f468aa4a63d9128378, type: 2}
+    position: {x: 278, y: 258}
+    previousguids: []
+  - guid: 2c9d3042583e71040a5470c2777b95e0
+    dialogueItem: {fileID: 11400000, guid: 4e359fcd250b7c9459666bc2881dbf09, type: 2}
+    position: {x: 1442, y: 158}
+    previousguids:
+    - bbfa5d33fa6c909498dcef7ed0ef3412

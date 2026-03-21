@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: TrombusToad3
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: bbfa5d33fa6c909498dcef7ed0ef3412
+    dialogueItem: {fileID: 11400000, guid: 8c376c906690098409c9aaea11274e06, type: 2}
+    position: {x: 866, y: 242}
+    previousguids:
+    - 680a95c0b22b4f649a07f8843ed37977
+  - guid: 2c9d3042583e71040a5470c2777b95e0
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 1208, y: 134}
+    previousguids:
+    - bbfa5d33fa6c909498dcef7ed0ef3412
+  - guid: 017957a3e07bd5f43affc6eb2545c8b1
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 1926, y: 158}
+    previousguids:
+    - dabed22d1bdd076489d3a8468fb1dcd2
+  - guid: c70f4941344f5c14daef6fbfd69cd277
+    dialogueItem: {fileID: 11400000, guid: 3bb46ac9cc9bd664b899090336c10be1, type: 2}
+    position: {x: 2281, y: 280}
+    previousguids:
+    - 017957a3e07bd5f43affc6eb2545c8b1
+  - guid: 98d487de8bd2f4d4bacb0b6619d77d83
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 2705, y: 180}
+    previousguids:
+    - c70f4941344f5c14daef6fbfd69cd277
+  - guid: fc5643d63ee6a1d43bc92202312e196d
+    dialogueItem: {fileID: 11400000, guid: 633bb73e77f6f194eb6d5693b9c9dbed, type: 2}
+    position: {x: 144, y: 258}
+    previousguids: []
+  - guid: 680a95c0b22b4f649a07f8843ed37977
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 526, y: 134}
+    previousguids:
+    - fc5643d63ee6a1d43bc92202312e196d
+  - guid: dabed22d1bdd076489d3a8468fb1dcd2
+    dialogueItem: {fileID: 11400000, guid: 5f1e0d254b9298349bf3ca43fe4d29e1, type: 2}
+    position: {x: 1529, y: 242}
+    previousguids:
+    - 2c9d3042583e71040a5470c2777b95e0
