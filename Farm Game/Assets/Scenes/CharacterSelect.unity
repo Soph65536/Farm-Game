@@ -2570,6 +2570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CauldronandCampfire
       objectReference: {fileID: 0}
+    - target: {fileID: 5672832872963012644, guid: 0ee2d5f01fbf51746a387d8238f4f78e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 948034135946717957, guid: 0ee2d5f01fbf51746a387d8238f4f78e, type: 3}
     - {fileID: 2651153716629211163, guid: 0ee2d5f01fbf51746a387d8238f4f78e, type: 3}

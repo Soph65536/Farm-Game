@@ -7,7 +7,7 @@ public class FarmingMechanic : MonoBehaviour
 {
     [SerializeField] private float maxPlantingDistance;
 
-    private void OnEnable()
+    private void Start()
     {
         Player.Instance.input.actions["WaterCrop"].performed += WaterCrop;
         Player.Instance.input.actions["WeedCrop"].performed += WeedCrop;
@@ -47,7 +47,7 @@ public class FarmingMechanic : MonoBehaviour
     private void HarvestCrop(InputAction.CallbackContext context)
     {
         SoilPlot plantingPlot = FindNearestSoilPlot(false);
-        if(plantingPlot != null) { plantingPlot.RemoveCrop(); } //harvestable check is done in removecrop so dont need condition here
+        if (plantingPlot != null) { plantingPlot.RemoveCrop(); } //harvestable check is done in removecrop so dont need condition here
     }
 
     public bool PlantSeed(Crop seed)

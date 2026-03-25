@@ -29,7 +29,12 @@ public class SoilPlot : MonoBehaviour
     [SerializeField] private Material drySoilMaterial;
     [SerializeField] private Material wetSoilMaterial;
 
-    private void Awake()
+    private void Start()
+    {
+        Invoke(nameof(SetRefs), 0.5f);
+    }
+
+    private void SetRefs()
     {
         currentCrop = null;
         currentGrowth = 0;

@@ -18,6 +18,8 @@ public class PlayerInventory : BaseInventory
         inventoryMenu = UIManager.Instance.FindMenuByName("inventory");
         inventoryItemHolder = inventoryMenu.GetComponentInChildren<InventoryItemHolder>(true);
         hud = Player.Instance.hud.GetComponent<HUD>();
+
+        Player.Instance.input.actions["UseItem"].performed += UseHeldItem;
     }
 
 

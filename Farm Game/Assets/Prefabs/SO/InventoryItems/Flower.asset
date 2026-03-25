@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Flower
   m_EditorClassIdentifier: 
   itemName: Flower
-  sprite: {fileID: 21300000, guid: ec1ca88865e63ad4ea0ef1ab10722556, type: 3}
+  sprite: {fileID: 21300000, guid: 3a6c756359b1767418a66aba543245f9, type: 3}
   value: 4
