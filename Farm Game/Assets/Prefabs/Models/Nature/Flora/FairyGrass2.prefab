@@ -1032,6 +1032,68 @@ PrefabInstance:
     - {fileID: -1209943248000697314, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
     - {fileID: 3212732690892242772, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
     - {fileID: 7012685052108109971, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
+    - {fileID: -177153676087084105, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4760479784305852921}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2427743160437141767}
   m_SourcePrefab: {fileID: 100100000, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
+--- !u!1 &4891703646096060664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
+  m_PrefabInstance: {fileID: 5702607563837984169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &4760479784305852921
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891703646096060664}
+  m_Mesh: {fileID: -4376050992541386419, guid: e92596e59153e6c4c905bce2a144ecbb, type: 3}
+--- !u!23 &2427743160437141767
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891703646096060664}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: dfad8acf0827a754c925b7dcf7e65e67, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

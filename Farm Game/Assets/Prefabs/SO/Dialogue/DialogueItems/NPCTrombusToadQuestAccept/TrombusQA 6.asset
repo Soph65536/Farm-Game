@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TrombusQA 6
   m_EditorClassIdentifier: 
   NameText: Trombus Toad
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 99e38edfcc226eb429bbbae180253d05, type: 3}
   IsPlayerTextOption: 0
   DialogueText: I heard if you hold the *P* key on your keyboard, it'll take you
     to a place where you can grow crops!

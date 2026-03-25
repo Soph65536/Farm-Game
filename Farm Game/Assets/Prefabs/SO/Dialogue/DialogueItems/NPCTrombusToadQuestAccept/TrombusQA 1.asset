@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TrombusQA 1
   m_EditorClassIdentifier: 
   NameText: Trombus Toad
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 99e38edfcc226eb429bbbae180253d05, type: 3}
   IsPlayerTextOption: 0
   DialogueText: Oh goodness! I seem to be lost!
   EventText: 

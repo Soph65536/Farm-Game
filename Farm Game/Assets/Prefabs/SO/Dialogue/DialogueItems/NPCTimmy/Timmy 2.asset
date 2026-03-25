@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Timmy 2
   m_EditorClassIdentifier: 
   NameText: Timmy Toad
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: f271161cccfc44a4599f1425ff4a510a, type: 3}
   IsPlayerTextOption: 0
   DialogueText: I'm tryna make a business here with me sister Tammy.
   EventText: 

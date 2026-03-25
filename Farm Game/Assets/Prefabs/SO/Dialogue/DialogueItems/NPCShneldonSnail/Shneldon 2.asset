@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shneldon 2
   m_EditorClassIdentifier: 
   NameText: Shneldon Snail
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: bc9dcd40d42542c47a2df4308fb61659, type: 3}
   IsPlayerTextOption: 0
   DialogueText: Bah! I didn't see ye there.
   EventText: 

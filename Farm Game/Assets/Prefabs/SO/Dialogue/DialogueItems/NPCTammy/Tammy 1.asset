@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tammy 1
   m_EditorClassIdentifier: 
   NameText: Tammy Toad
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3c36ee9d527d79c498b1c8c55543ce8d, type: 3}
   IsPlayerTextOption: 0
   DialogueText: I don't sell anything. I'm just here.
   EventText: 
