@@ -15,5 +15,5 @@ MonoBehaviour:
   NameText: 
   Icon: {fileID: 0}
   IsPlayerTextOption: 1
-  DialogueText: ....
+  DialogueText: Bye....
   EventText: loadworldarea

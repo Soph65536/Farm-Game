@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6994778dec41147a5df182011cafcb, type: 3}
+  m_Name: CornSeed
+  m_EditorClassIdentifier: 
+  itemName: Corn Kernel
+  sprite: {fileID: 21300000, guid: 56c9a0ef41a7ac0479c12478ca4c2af2, type: 3}
+  value: 2
+  baseGrowthSpeed: 0.1
+  prefab: {fileID: 4355565146971995688, guid: bcb6cbebcb1d9b84282c0e9432c40760, type: 3}
+  harvestableItem: {fileID: 11400000, guid: ef2cd1bd7d1bb4041830b3f88ddb75c7, type: 2}

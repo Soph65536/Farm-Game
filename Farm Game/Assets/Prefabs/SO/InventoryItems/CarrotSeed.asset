@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6994778dec41147a5df182011cafcb, type: 3}
   m_Name: CarrotSeed
   m_EditorClassIdentifier: 
-  itemName: Carrot Seed
+  itemName: Krot Seed
   sprite: {fileID: 21300000, guid: 3d5d41e4f957ff043a3145bfa5d58c82, type: 3}
   value: 1
-  baseGrowthSpeed: 0.5
+  baseGrowthSpeed: 0.25
   prefab: {fileID: 4102188296518594880, guid: c1687b03722cc5d47a076586b48fcd90, type: 3}
   harvestableItem: {fileID: 11400000, guid: f044558e7dfc9794781e7d3f9885176e, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6994778dec41147a5df182011cafcb, type: 3}
+  m_Name: ChivesSeed
+  m_EditorClassIdentifier: 
+  itemName: Leatus Seed
+  sprite: {fileID: 21300000, guid: 09796f2951d68a647b674b4fbcc60c7e, type: 3}
+  value: 2
+  baseGrowthSpeed: 0.15
+  prefab: {fileID: 2636722355884769993, guid: 65895f7febd8faf43886a9f15dbc642e, type: 3}
+  harvestableItem: {fileID: 11400000, guid: 7ef779349800d7e4f81cfac7fed3f3dc, type: 2}

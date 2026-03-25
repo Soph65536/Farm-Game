@@ -15,6 +15,6 @@ MonoBehaviour:
   NameText: Trombus Toad
   Icon: {fileID: 0}
   IsPlayerTextOption: 0
-  DialogueText: Oh no! peharps you could try grow me something with these odd seeds
+  DialogueText: Oh no! perhaps you could try grow me something with these odd seeds
     I found...
   EventText: 

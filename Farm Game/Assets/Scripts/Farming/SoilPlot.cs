@@ -10,7 +10,7 @@ public class SoilPlot : MonoBehaviour
     const float weedMultiplier = 0.7f;
 
     const float chanceOfWeeds = 7; //1/chanceOfWeeds-1 chance
-    const float wetDuration = 5; //time in second that crops stay wet for
+    const float wetDuration = 20; //time in second that crops stay wet for
 
     public Crop currentCrop { get; private set; }
 

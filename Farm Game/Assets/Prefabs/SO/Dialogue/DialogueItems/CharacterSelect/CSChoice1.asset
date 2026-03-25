@@ -15,6 +15,5 @@ MonoBehaviour:
   NameText: ???
   Icon: {fileID: 0}
   IsPlayerTextOption: 0
-  DialogueText: Its like animal crossing you choose a thiing and then it determines
-    yours stats from it
+  DialogueText: Where have you been?
   EventText: 

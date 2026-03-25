@@ -15,6 +15,5 @@ MonoBehaviour:
   NameText: ???
   Icon: {fileID: 0}
   IsPlayerTextOption: 0
-  DialogueText: You can modify this text within the Dialogue Item or in the Dialogue
-    Tree Graph!
+  DialogueText: Sounds great! I'll be sure to be back for it later.
   EventText: 

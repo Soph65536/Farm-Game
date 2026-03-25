@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6994778dec41147a5df182011cafcb, type: 3}
+  m_Name: BeetSeed
+  m_EditorClassIdentifier: 
+  itemName: Blueroot Seed
+  sprite: {fileID: 21300000, guid: 9a442fafb14945140917233da9ba9044, type: 3}
+  value: 1
+  baseGrowthSpeed: 0.2
+  prefab: {fileID: 3640965016408673303, guid: c61755edb43882748bd4c7cf33765e73, type: 3}
+  harvestableItem: {fileID: 11400000, guid: 577ec216c0d994c4ba87f2f39df4af70, type: 2}

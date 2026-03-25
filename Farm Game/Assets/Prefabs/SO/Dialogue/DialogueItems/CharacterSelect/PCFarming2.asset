@@ -15,5 +15,5 @@ MonoBehaviour:
   NameText: 
   Icon: {fileID: 0}
   IsPlayerTextOption: 1
-  DialogueText: farming increase option
+  DialogueText: Were you in the garden?
   EventText: increasefarming
