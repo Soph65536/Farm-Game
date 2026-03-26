@@ -29,9 +29,7 @@ public class CameraController : MonoBehaviour
         }
 
         freeLook = GetComponent<CinemachineFreeLook>();
-
-        freeLook.m_YAxis.m_MaxSpeed = baseYLookSpeed;
-        freeLook.m_XAxis.m_MaxSpeed = baseXLookSpeed;
+        GameplayOptions.Instance.UpdateLookSpeed(); //update camera sensitivity with options values
     }
 
     private void Start()
@@ -51,6 +49,12 @@ public class CameraController : MonoBehaviour
         //set cinemachine camera values
         freeLook.Follow = followObject.transform;
         freeLook.LookAt = followObject.transform;
+    }
+
+    public void SetSensitivity(float x, float y)
+    {
+        freeLook.m_XAxis.m_MaxSpeed = x;
+        freeLook.m_YAxis.m_MaxSpeed = y;
     }
 
     public void FocusOnPlayer()
