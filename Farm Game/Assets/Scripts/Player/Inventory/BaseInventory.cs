@@ -47,4 +47,17 @@ public class BaseInventory : MonoBehaviour
 
         inventoryItemHolder.UpdateItems(items);
     }
+
+    public InventoryMenuItem RemoveItemAndReturn(InventoryMenuItem menuItem)
+    {
+        bool hasAnyLeft = true;
+
+        int index = FindItemIndex(menuItem.itemType);
+        items[index].quantity--;
+        if (items[index].quantity <= 0) { items.RemoveAt(index); hasAnyLeft = false; }
+
+        inventoryItemHolder.UpdateItems(items);
+
+        return hasAnyLeft ? items[index] : null;
+    }
 }

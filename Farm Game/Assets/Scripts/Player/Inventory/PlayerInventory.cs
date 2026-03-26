@@ -65,8 +65,7 @@ public class PlayerInventory : BaseInventory
             {
                 if (Player.Instance.farming.PlantSeed((Crop)heldItem.itemType))
                 {
-                    RemoveItem(heldItem);
-                    SetHeldItem(null);
+                    SetHeldItem(RemoveItemAndReturn(heldItem)); //remove 1 of item and then set held item to updated version of item
                     //plant seed animation
                 }
             }

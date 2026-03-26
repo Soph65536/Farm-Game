@@ -6,6 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(CinemachineFreeLook))]
 public class CameraController : MonoBehaviour
 {
+    const float baseYLookSpeed = 1;
+    const float baseXLookSpeed = 100;
+
     private GameObject followObject;
     private CinemachineFreeLook freeLook;
 
@@ -26,6 +29,9 @@ public class CameraController : MonoBehaviour
         }
 
         freeLook = GetComponent<CinemachineFreeLook>();
+
+        freeLook.m_YAxis.m_MaxSpeed = baseYLookSpeed;
+        freeLook.m_XAxis.m_MaxSpeed = baseXLookSpeed;
     }
 
     private void Start()
