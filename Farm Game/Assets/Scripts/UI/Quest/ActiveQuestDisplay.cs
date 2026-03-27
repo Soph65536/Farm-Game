@@ -43,7 +43,7 @@ public class ActiveQuestDisplay : MonoBehaviour
         }
 
         descriptionText.text = quest.QuestDescription;
-        itemsToSubmitText.enabled = true;
+        itemsToSubmitText.enabled = quest.ItemsToSubmit.Length != 0;
 
         foreach(InventoryItem item in quest.ItemsToSubmit)
         {

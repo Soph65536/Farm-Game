@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public ForagingMechanic foraging;
 
     public Animator animator;
+    public AudioSource audioSource;
     //set these manually
     public GameObject model;
     public GameObject hud;
@@ -50,6 +51,7 @@ public class Player : MonoBehaviour
         foraging = GetComponent<ForagingMechanic>();
 
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponentInChildren<AudioSource>();
     }
 
     public void EnableInput()

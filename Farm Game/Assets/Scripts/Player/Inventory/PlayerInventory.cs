@@ -48,7 +48,7 @@ public class PlayerInventory : BaseInventory
     public void SetHeldItem(InventoryMenuItem menuItem)
     {
         heldItem = menuItem;
-        hud.UpdateHeldItem(menuItem == null? null : menuItem.itemType.Sprite);
+        hud.UpdateHeldItem(menuItem);
     }
 
     //runs when use item input is pressed

@@ -1,3 +1,4 @@
+using Inventory;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,7 @@ public class HUD : MonoBehaviour
     [SerializeField] private TextMeshProUGUI moneyValue;
     [SerializeField] private Slider hungerSlider;
     [SerializeField] private Image heldItemImage;
+    [SerializeField] private TextMeshProUGUI heldItemQuantity;
 
     private void Awake()
     {
@@ -30,9 +32,16 @@ public class HUD : MonoBehaviour
         hungerSlider.value = StatManager.Instance.hunger;
     }
 
-    public void UpdateHeldItem(Sprite sprite)
+    public void UpdateHeldItem(InventoryMenuItem item)
     {
-        heldItemImage.sprite = sprite;
-        heldItemImage.enabled = sprite != null; //set to inactive if no sprite to show
+        if(item != null)
+        {
+            heldItemImage.sprite = item.itemType.Sprite;
+            heldItemQuantity.text = item.quantity.ToString();
+        }
+
+        //set to inactive if no item to show
+        heldItemImage.enabled = item != null;
+        heldItemQuantity.enabled = item != null;
     }
 }
