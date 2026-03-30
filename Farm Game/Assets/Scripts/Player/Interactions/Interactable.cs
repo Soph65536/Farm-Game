@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
 public abstract class Interactable : MonoBehaviour
 {
@@ -30,15 +31,21 @@ public abstract class Interactable : MonoBehaviour
     private void OnDisable()
     {
         Player.Instance.input.actions["UseItem"].performed -= Interact;
+        SetInteractable(false);
     }
 
+
+    protected void SetInteractable(bool value)
+    {
+        interactable = value;
+        interactPromptUI.SetActive(interactable);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<Player>() != null)
         {
-            interactable = true;
-            interactPromptUI.SetActive(interactable);
+            SetInteractable(true);
         }
     }
 
@@ -46,8 +53,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (other.GetComponent<Player>() != null)
         {
-            interactable = false;
-            interactPromptUI.SetActive(interactable);
+            SetInteractable(false);
         }
     }
 }
