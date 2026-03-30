@@ -13,7 +13,7 @@ public class PlayerInventory : BaseInventory
 
     private HUD hud;
 
-    private void SetInventoryMenus()
+    private void SetUIRefs()
     {
         inventoryMenu = UIManager.Instance.FindMenuByName("inventory");
         inventoryItemHolder = inventoryMenu.GetComponentInChildren<InventoryItemHolder>(true);
@@ -26,7 +26,7 @@ public class PlayerInventory : BaseInventory
     private void Start()
     {
         items = new List<InventoryMenuItem>();
-        Invoke(nameof(SetInventoryMenus), 0.5f);
+        Invoke(nameof(SetUIRefs), 0.5f);
     }
 
     private void OnEnable()

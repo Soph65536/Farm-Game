@@ -34,6 +34,8 @@ public class FarmTeleport : MonoBehaviour
         {
             //currently in farm so leave farm
             transform.position = worldScenePosition;
+            //remove held item
+            Player.Instance.inventory.SetHeldItem(null);
         }
         else
         {

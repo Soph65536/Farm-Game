@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     [SerializeField] private Slider hungerSlider;
     [SerializeField] private Image heldItemImage;
     [SerializeField] private TextMeshProUGUI heldItemQuantity;
+    public GameObject interactPrompt;
 
     private void Awake()
     {
@@ -20,6 +21,8 @@ public class HUD : MonoBehaviour
         UpdateHungerSlider();
 
         UpdateHeldItem(null);
+
+        interactPrompt.SetActive(false);
     }
 
     public void UpdateMoneyValue()

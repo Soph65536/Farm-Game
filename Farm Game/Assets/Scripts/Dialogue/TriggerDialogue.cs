@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class TriggerDialogue : MonoBehaviour
+public class TriggerDialogue : Interactable
 {
     public Menu dialogueMenu;
     [SerializeField] private string conversationAsset;
@@ -18,16 +19,27 @@ public class TriggerDialogue : MonoBehaviour
     private void Start()
     {
         if (runOnAwake) { InvokeDialogue(0.5f); } //build wants to run this start function before dialogue handler is setup so must invoke this
+
+        interactable = false;
+        Invoke(nameof(SetUIRefs), 0.5f);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.GetComponent<Player>() != null && !runOnAwake) { RunDialogue(); }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.GetComponent<Player>() != null && !runOnAwake) { RunDialogue(); }
+    //}
 
     public void InvokeDialogue(float delay)
     {
         Invoke(nameof(RunDialogue), delay);
+    }
+
+    protected override void Interact(InputAction.CallbackContext context)
+    {
+        if (interactable && !runOnAwake) { 
+            interactPromptUI.SetActive(false); 
+            RunDialogue(); 
+        }
     }
 
     private void RunDialogue()
