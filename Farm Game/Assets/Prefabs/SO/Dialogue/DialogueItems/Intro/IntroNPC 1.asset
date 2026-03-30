@@ -16,4 +16,4 @@ MonoBehaviour:
   Icon: {fileID: 0}
   IsPlayerTextOption: 0
   DialogueText: I've finally finished cooking! I should go let Ptera know.
-  EventText: selockdoor
+  EventText: 

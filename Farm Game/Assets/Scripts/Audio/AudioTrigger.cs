@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class AudioMusicTrigger : MonoBehaviour
+public class AudioTrigger : MonoBehaviour
 {
     private AudioSource audioSource;
     [SerializeField] private string musicToPlay;
+    [SerializeField] private bool looping;
 
     private void Awake()
     {
@@ -15,7 +16,7 @@ public class AudioMusicTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayMusic();
+        PlayAudio();
     }
 
     private void OnTriggerExit(Collider other)
@@ -23,8 +24,8 @@ public class AudioMusicTrigger : MonoBehaviour
         AudioManager.Instance.StopAudio(audioSource);
     }
 
-    public void PlayMusic()
+    public void PlayAudio()
     {
-        AudioManager.Instance.PlayAudio(true, audioSource, musicToPlay);
+        AudioManager.Instance.PlayAudio(looping, audioSource, musicToPlay);
     }
 }

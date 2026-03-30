@@ -24,6 +24,12 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public Vector3 rotation;
     private bool grounded;
 
+    [Header("Audio")]
+    [SerializeField] private float walkSoundDelay;
+    [SerializeField] private float sprintSoundDelay;
+    private float moveSoundDelay;
+    private bool playingWalkSound;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -36,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
         movementVelocity = Vector3.zero;
         rotation = Vector3.zero;
         grounded = false;
+
+        moveSoundDelay = walkSoundDelay;
+        playingWalkSound = false;
 
         InvokeRepeating(nameof(CheckForHungerDecrease), 1, 1);
     }
@@ -66,6 +75,9 @@ public class PlayerMovement : MonoBehaviour
         //set movement velocity based on input
         movementVelocity = (transform.forward * movement.y + transform.right * movement.x) * moveSpeed * Time.deltaTime;
         rb.velocity = new Vector3 (movementVelocity.x, rb.velocity.y, movementVelocity.z);
+
+        //movement audio
+        if (movement != Vector2.zero && !playingWalkSound) { StartCoroutine(nameof(PlayWalkSound)); }
 
         Gravity();
     }
@@ -99,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
     private void Sprint(InputAction.CallbackContext context)
     {
         moveSpeed = context.performed ? sprintSpeed : walkSpeed;
+        moveSoundDelay = context.performed ? sprintSoundDelay : walkSoundDelay;
 
         Player.Instance.animator.SetBool("Sprinting", context.performed);
     }
@@ -111,6 +124,15 @@ public class PlayerMovement : MonoBehaviour
 
             Player.Instance.animator.SetTrigger("StartJump");
         }
+    }
+
+
+    private IEnumerator PlayWalkSound()
+    {
+        playingWalkSound = true;
+        AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "sewalk");
+        yield return new WaitForSeconds(moveSoundDelay);
+        playingWalkSound = false;
     }
 
 

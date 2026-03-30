@@ -24,11 +24,7 @@ public class FarmingMechanic : MonoBehaviour
     private void WaterCrop(InputAction.CallbackContext context)
     {
         SoilPlot plantingPlot = FindNearestSoilPlot(false);
-        if (plantingPlot != null) 
-        {
-            plantingPlot.WaterCrop();
-            //play watering animation
-        }
+        if (plantingPlot != null) { plantingPlot.WaterCrop(); }
     }
 
     private void WeedCrop(InputAction.CallbackContext context)
@@ -36,11 +32,7 @@ public class FarmingMechanic : MonoBehaviour
         SoilPlot plantingPlot = FindNearestSoilPlot(false);
         if (plantingPlot != null) 
         {
-            if (plantingPlot.hasWeeds)
-            {
-                plantingPlot.RemoveWeeds();
-                //play weeding animation
-            }
+            if (plantingPlot.hasWeeds){ plantingPlot.RemoveWeeds(); }
         }
     }
 

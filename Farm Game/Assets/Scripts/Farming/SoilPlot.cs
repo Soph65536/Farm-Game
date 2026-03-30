@@ -89,6 +89,7 @@ public class SoilPlot : MonoBehaviour
             currentCrop = null;
             currentGrowth = 0;
 
+            AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "seharvestcrop");
             //animate player harvesting crop
         }
     }
@@ -101,6 +102,9 @@ public class SoilPlot : MonoBehaviour
         cropObjectAppearance = cropObject.GetComponent<PlantGrowthAppearance>();
         cropObjectAppearance.SetGrowthState(0);
 
+        AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "seplantcrop");
+        //play planting animation
+
         //run plant growth every minute
         InvokeRepeating(nameof(GrowPlant), plantGrowthUpdateFrequency, plantGrowthUpdateFrequency);
     }
@@ -111,6 +115,9 @@ public class SoilPlot : MonoBehaviour
 
         isWet = true;
         soilMesh.material = wetSoilMaterial;
+
+        AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "sewatercrop");
+        //play watering animation
 
         StartCoroutine(nameof(WateringTimer));
     }
@@ -127,5 +134,8 @@ public class SoilPlot : MonoBehaviour
     {
         weedGenerator.ClearWeeds();
         hasWeeds = false;
+
+        AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "seweedcrop");
+        //play weeding animation
     }
 }
