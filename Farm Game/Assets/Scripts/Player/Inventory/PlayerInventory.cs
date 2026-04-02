@@ -45,10 +45,15 @@ public class PlayerInventory : BaseInventory
         return FindItemIndex(item) != -2;
     }
 
-    public void SetHeldItem(InventoryMenuItem menuItem)
+    public bool SetHeldItem(InventoryMenuItem menuItem)
     {
-        heldItem = menuItem;
-        hud.UpdateHeldItem(menuItem);
+        if (Player.Instance.farmTeleport.inFarm)
+        {
+            heldItem = menuItem;
+            hud.UpdateHeldItem(menuItem);
+            return true;
+        }
+        return false;
     }
 
     //runs when use item input is pressed

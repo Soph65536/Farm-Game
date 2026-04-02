@@ -111,6 +111,36 @@ MonoBehaviour:
   rightClick:
     m_PersistentCalls:
       m_Calls: []
+  startHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2549028756819236361}
+        m_TargetAssemblyTypeName: InventoryItemButton, Assembly-CSharp
+        m_MethodName: StartHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  stopHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2549028756819236361}
+        m_TargetAssemblyTypeName: InventoryItemButton, Assembly-CSharp
+        m_MethodName: StopHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2549028756819236361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2bf21b8329de64692d21f1f1ce86a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryDescriptorPrefab: {fileID: 4178036801444188852, guid: 00bef0c6ac0a6214c88f3ce078c59820, type: 3}
 --- !u!1 &6175826470124942070
 GameObject:
   m_ObjectHideFlags: 0

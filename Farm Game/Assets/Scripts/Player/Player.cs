@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public PlayerInventory inventory;
 
     public FarmingMechanic farming;
+    public FarmTeleport farmTeleport;
     public HuntingMechanic hunting;
     public ForagingMechanic foraging;
 
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
         movement = GetComponent<PlayerMovement>();
         inventory = GetComponent<PlayerInventory>();
         farming = GetComponent<FarmingMechanic>();
+        farmTeleport = GetComponent<FarmTeleport>();
         hunting = GetComponent<HuntingMechanic>();
         foraging = GetComponent<ForagingMechanic>();
 

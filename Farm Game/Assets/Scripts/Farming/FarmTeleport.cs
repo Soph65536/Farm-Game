@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class FarmTeleport : MonoBehaviour
 {
     private GameObject farmSet;
-    private bool inFarm;
+    public bool inFarm { get; private set; }
 
     private Vector3 worldScenePosition;
     [SerializeField] private Vector3 farmScenePosition;

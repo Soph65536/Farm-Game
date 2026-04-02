@@ -10,12 +10,16 @@ using UnityEngine.UI;
 public class InventoryItemButton : MonoBehaviour
 {
     protected InventoryMenuItem menuItem;
+    [SerializeField] protected GameObject inventoryDescriptorPrefab;
+    private GameObject inventoryDescriptor;
 
     private Image image;
     private TextMeshProUGUI text;
 
     public void SetupItem(InventoryMenuItem menuItemParam)
     {
+        inventoryDescriptor = null;
+
         image = GetComponent<Image>();
         text = GetComponentInChildren<TextMeshProUGUI>();
 
@@ -29,12 +33,26 @@ public class InventoryItemButton : MonoBehaviour
     //inventory functions
     public void Hold()
     {
-        Player.Instance.inventory.SetHeldItem(menuItem);
-        UIManager.Instance.ExitMenu();
+        if (Player.Instance.inventory.SetHeldItem(menuItem)) { UIManager.Instance.ExitMenu(); }
     }
 
     public void Discard()
     {
         Player.Instance.inventory.RemoveItem(menuItem);
+    }
+
+    public void StartHover()
+    {
+        if (inventoryDescriptor == null) 
+        { 
+            inventoryDescriptor = Instantiate(inventoryDescriptorPrefab, gameObject.transform.position, Quaternion.identity,gameObject.transform.parent.parent);
+            inventoryDescriptor.GetComponent<InventoryDescriptor>().SetupItem(menuItem);
+        }
+    }
+
+    public void StopHover()
+    {
+        Destroy(inventoryDescriptor);
+        //inventoryDescriptor = null;
     }
 }
