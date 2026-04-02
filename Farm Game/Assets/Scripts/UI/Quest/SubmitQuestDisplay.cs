@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class SubmitQuestDisplay : MonoBehaviour
 {
-    private Color disabledColour = new(1, 1, 1, 0.5f);
+    private Color submitTextEnabledColour = new(120, 134, 43);
+    private Color submitTextDisabledColour = new(91, 152, 96, 0.5f);
+    private Color disabledColour = new(63, 167, 145, 0.5f);
 
     private Quest submittingQuest;
     private bool hasAllItems;
@@ -45,6 +47,7 @@ public class SubmitQuestDisplay : MonoBehaviour
 
         //set other ui elements based on if hasallitems
         submitButton.GetComponent<Image>().color = hasAllItems ? Color.white : disabledColour;
+        submitButton.GetComponentInChildren<TextMeshProUGUI>().color = hasAllItems ? submitTextEnabledColour : submitTextDisabledColour;
         notAllItemsCollected.SetActive(!hasAllItems);
     }
 
