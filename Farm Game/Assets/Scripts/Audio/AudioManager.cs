@@ -75,7 +75,7 @@ public class AudioManager : MonoBehaviour
             {
                 foreach (AudioClip clip in clipsToPlay)
                 {
-                    if (clip == audioSource.clip) { return; }
+                    if (clip == audioSource.clip && audioSource.isPlaying) { return; }
                 }
             }
 

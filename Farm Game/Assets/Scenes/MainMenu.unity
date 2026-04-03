@@ -2157,6 +2157,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   audioClips:
+  - clipName: ambientforest
+    audioClips:
+    - {fileID: 8300000, guid: f6198a95ff450e34aa5c942f6f0d791c, type: 3}
+    - {fileID: 8300000, guid: e4c3badeaf9fb8c4c978384701fe71c2, type: 3}
+    - {fileID: 8300000, guid: 822a322f03b6315479e1e72dea09e122, type: 3}
+    - {fileID: 8300000, guid: ed06094dcbee30945b065356442fc380, type: 3}
+    - {fileID: 8300000, guid: fb67e8fa98636ed499d8dc77101e8c85, type: 3}
+    - {fileID: 8300000, guid: 4481d53b0a3afdf4f9e9427f33cb8cff, type: 3}
+    - {fileID: 8300000, guid: f588397b72ce5fa479b727359669aa49, type: 3}
+    - {fileID: 8300000, guid: 7dff9d0bccaf7cf449c78fb1d39ee55b, type: 3}
+    - {fileID: 8300000, guid: 82da483ad16a89a4e98403632cebf50d, type: 3}
+    - {fileID: 8300000, guid: e75016ec0a71e3e48a9522ea8feecfc6, type: 3}
+    - {fileID: 8300000, guid: 7749877b075be3d4dad63a07874ccfe3, type: 3}
+    - {fileID: 8300000, guid: b534001c2b9c2c54cbd41a25b111bfaa, type: 3}
+    - {fileID: 8300000, guid: b0c66cd1cf666fe449710dea5c684732, type: 3}
+    - {fileID: 8300000, guid: 252205280f0730c468fb57654b24ba79, type: 3}
+    - {fileID: 8300000, guid: 5216250b18a26124a9c96f16fc30a860, type: 3}
+    - {fileID: 8300000, guid: aa14b53425c11284f9b4dcc29fa1433f, type: 3}
+    - {fileID: 8300000, guid: 4bd8fe701478b8a4f814870970161612, type: 3}
+    - {fileID: 8300000, guid: dd012138027b3144abce4778925e548c, type: 3}
+  - clipName: ambientcave
+    audioClips:
+    - {fileID: 8300000, guid: 62d86cce4e29a8347a65fba80fcde20c, type: 3}
+    - {fileID: 8300000, guid: 4bd8fe701478b8a4f814870970161612, type: 3}
+    - {fileID: 8300000, guid: 495098a485083b94aab53e9348f5bf90, type: 3}
+  - clipName: ambientvolcano
+    audioClips:
+    - {fileID: 8300000, guid: d893cab662e1fbd4e8fdf2d7b49f4a6f, type: 3}
   - clipName: musicmainmenu
     audioClips:
     - {fileID: 8300000, guid: 6d38c13f381313448bea512718c7ad54, type: 3}
