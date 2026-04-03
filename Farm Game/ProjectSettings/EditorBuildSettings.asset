@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CharacterSelect.unity
     guid: ca5d16d6b1a313e4faf93d561d7fda29
   - enabled: 1
-    path: Assets/Scenes/WorldAreaStart.unity
+    path: Assets/Scenes/WorldArea.unity
     guid: b18903405153a8e43a58db9ebf8a3f93
   - enabled: 1
     path: Assets/Scenes/Farm.unity
