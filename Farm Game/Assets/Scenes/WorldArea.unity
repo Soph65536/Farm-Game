@@ -1027,6 +1027,136 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5526423263623537855, guid: ebc3b6805ac4f9048b6cf1bee7f14c57, type: 3}
   m_PrefabInstance: {fileID: 78691914}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &81917763
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 83976474}
+    m_Modifications:
+    - target: {fileID: 560354282240173334, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: HasCameraChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 560354282240173334, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: NewCameraLocation
+      value: 
+      objectReference: {fileID: 81917765}
+    - target: {fileID: 560354282240173334, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: conversationAsset
+      value: Nox1
+      objectReference: {fileID: 0}
+    - target: {fileID: 933764493027375734, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: HasCameraChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 933764493027375734, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: NewCameraLocation
+      value: 
+      objectReference: {fileID: 81917765}
+    - target: {fileID: 933764493027375734, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: conversationAsset
+      value: Nox4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140182303856581137, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: NewCameraLocation
+      value: 
+      objectReference: {fileID: 81917765}
+    - target: {fileID: 1140182303856581137, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: conversationAsset
+      value: Nox2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043821883891998170, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: eventName
+      value: noxquestcomplete2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933779341852461807, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: eventName
+      value: noxquestcomplete1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865144075538763560, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: eventName
+      value: noxquestaccept
+      objectReference: {fileID: 0}
+    - target: {fileID: 6646635622630049989, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: eventName
+      value: noxquestsubmit
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 73.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.07420778
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.509995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.983603
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.18034741
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -20.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422969844993754565, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: HasCameraChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422969844993754565, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: NewCameraLocation
+      value: 
+      objectReference: {fileID: 81917765}
+    - target: {fileID: 8422969844993754565, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: conversationAsset
+      value: Nox3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686533679890840837, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      propertyPath: m_Name
+      value: Nox
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1608395076}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+--- !u!4 &81917764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7263523959997087041, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+  m_PrefabInstance: {fileID: 81917763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &81917765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8686533679890840837, guid: 9e4c1e88fdc70294a97e3eac5a7801a2, type: 3}
+  m_PrefabInstance: {fileID: 81917763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &83976473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1106,12 +1236,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6868234724584880491, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281126665}
     - targetCorrespondingSourceObject: {fileID: 5786246964462817435, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1380753921}
     - targetCorrespondingSourceObject: {fileID: 5786246964462817435, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1272408518}
+    - targetCorrespondingSourceObject: {fileID: 5786246964462817435, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81917764}
     - targetCorrespondingSourceObject: {fileID: 2249419243259379595, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2066843499}
@@ -1137,6 +1273,11 @@ Transform:
 --- !u!4 &83976475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2249419243259379595, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
+  m_PrefabInstance: {fileID: 83976473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &83976476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6868234724584880491, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
   m_PrefabInstance: {fileID: 83976473}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &84491057
@@ -1998,6 +2139,122 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4622981333497442, guid: dd3ee0c97aab8a7498c9292f3482f60b, type: 3}
   m_PrefabInstance: {fileID: 129017541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &144060589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144060594}
+  - component: {fileID: 144060593}
+  - component: {fileID: 144060592}
+  - component: {fileID: 144060591}
+  - component: {fileID: 144060590}
+  m_Layer: 0
+  m_Name: TammyToadQuestSubmit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &144060590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144060589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d272ce727814e46408831bc281c46107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToSubmit: {fileID: 11400000, guid: 88a523105d2d22e46965756674a51a59, type: 2}
+--- !u!114 &144060591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144060589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d605826e768f34282f48dbb4e703bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: tammytoadquestsubmit
+  destroyOnLoad: 1
+  eventFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 144060590}
+        m_TargetAssemblyTypeName: QuestSubmission, Assembly-CSharp
+        m_MethodName: InvokeQuestSubmit
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &144060592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144060589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88dff4c78c480489409892083f565b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMenu: {fileID: 0}
+  conversationAsset: TammyToad2
+  runOnAwake: 0
+  destroyAfterRun: 0
+  HasCameraChange: 1
+  NewCameraLocation: {fileID: 1381465413}
+--- !u!135 &144060593
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144060589}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 4
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!4 &144060594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144060589}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1381465412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &151948495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3616,6 +3873,155 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 200, y: 100, z: 1}
   m_Center: {x: 0, y: 50, z: 0}
+--- !u!1001 &281126664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 83976476}
+    m_Modifications:
+    - target: {fileID: 546795909986295229, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_Name
+      value: BabaYagaHut
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 77.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.679993
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9916931
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.1286267
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 14.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2377127712291089029, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281126671}
+    - targetCorrespondingSourceObject: {fileID: 8153829288713860827, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281126670}
+    - targetCorrespondingSourceObject: {fileID: 1187424081108368741, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281126669}
+  m_SourcePrefab: {fileID: 100100000, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+--- !u!4 &281126665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 926979936180160263, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+  m_PrefabInstance: {fileID: 281126664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &281126666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1187424081108368741, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+  m_PrefabInstance: {fileID: 281126664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &281126667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8153829288713860827, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+  m_PrefabInstance: {fileID: 281126664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &281126668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2377127712291089029, guid: 94320be24e085c2409cd83457203bb0f, type: 3}
+  m_PrefabInstance: {fileID: 281126664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &281126669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281126666}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.007455198, y: 0.0033434583, z: 0.04360595}
+  m_Center: {x: 0.003332287, y: -0.00047592405, z: 0.02181041}
+--- !u!65 &281126670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281126667}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.025337465, y: 0.026512135, z: 0.02}
+  m_Center: {x: 0.00000006053465, y: -0.00000006286428, z: -0.0021964628}
+--- !u!65 &281126671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281126668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.023568183, y: 0.030663036, z: 0.035575125}
+  m_Center: {x: 0.00000011915436, y: 0.0036788988, z: 0.0018840515}
 --- !u!1001 &286851540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6657,6 +7063,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7993081357618229510, guid: ffa0f996f5cdedf43a615ea7198d838e, type: 3}
   m_PrefabInstance: {fileID: 585166579}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &591456798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 591456799}
+  - component: {fileID: 591456801}
+  - component: {fileID: 591456800}
+  m_Layer: 0
+  m_Name: TammyToadQuestComplete1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &591456799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591456798}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1381465412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591456800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591456798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88dff4c78c480489409892083f565b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMenu: {fileID: 0}
+  conversationAsset: TammyToad3
+  runOnAwake: 0
+  destroyAfterRun: 1
+  HasCameraChange: 0
+  NewCameraLocation: {fileID: 0}
+--- !u!114 &591456801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591456798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d605826e768f34282f48dbb4e703bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: tammytoadquestcomplete1
+  destroyOnLoad: 1
+  eventFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 144060589}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 591456800}
+        m_TargetAssemblyTypeName: TriggerDialogue, Assembly-CSharp
+        m_MethodName: InvokeDialogue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &592863901
 GameObject:
   m_ObjectHideFlags: 0
@@ -10213,8 +10711,10 @@ GameObject:
   - component: {fileID: 948032830}
   - component: {fileID: 948032832}
   - component: {fileID: 948032831}
+  - component: {fileID: 948032834}
+  - component: {fileID: 948032833}
   m_Layer: 0
-  m_Name: TammyToad
+  m_Name: TammyToadQuestAccept
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10248,7 +10748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueMenu: {fileID: 0}
-  conversationAsset: TammyToad
+  conversationAsset: TammyToad1
   runOnAwake: 0
   destroyAfterRun: 0
   HasCameraChange: 0
@@ -10274,6 +10774,72 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 4
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &948032833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948032829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea653de1a77a37e458bbf34aeb5147d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToAdd: {fileID: 11400000, guid: 88a523105d2d22e46965756674a51a59, type: 2}
+--- !u!114 &948032834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948032829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d605826e768f34282f48dbb4e703bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: tammytoadquestaccept
+  destroyOnLoad: 1
+  eventFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 948032833}
+        m_TargetAssemblyTypeName: AddQuest, Assembly-CSharp
+        m_MethodName: AddAQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 948032829}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144060589}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &948844514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10651,7 +11217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventName: trombustoadquestcomplete2
-  destroyOnLoad: 0
+  destroyOnLoad: 1
   eventFunction:
     m_PersistentCalls:
       m_Calls:
@@ -13955,11 +14521,28 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8601744041728266942, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
       insertIndex: 0
       addedObject: {fileID: 948032830}
+    - targetCorrespondingSourceObject: {fileID: 8601744041728266942, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 144060594}
+    - targetCorrespondingSourceObject: {fileID: 8601744041728266942, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 591456799}
+    - targetCorrespondingSourceObject: {fileID: 8601744041728266942, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1822027944}
+    - targetCorrespondingSourceObject: {fileID: 8601744041728266942, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1675430404}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
 --- !u!4 &1381465412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8601744041728266942, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
+  m_PrefabInstance: {fileID: 1381465411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1381465413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8940867974483118084, guid: 7a7153fd97a7a4d4f8119a2c3899850d, type: 3}
   m_PrefabInstance: {fileID: 1381465411}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1386895965
@@ -17098,6 +17681,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4945391837379990, guid: 9b6eba5dea9e77a4abd8f45df1ffffb6, type: 3}
   m_PrefabInstance: {fileID: 1592895488}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1608395075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 81917764}
+    m_Modifications:
+    - target: {fileID: 8558908578644229040, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_Name
+      value: AF_SYRDONIX_BUN
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+--- !u!4 &1608395076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9046758230563332362, guid: 73e76fac9a1b3df4fa9e252b40c5c227, type: 3}
+  m_PrefabInstance: {fileID: 1608395075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1613889570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17492,6 +18137,78 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1675430403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675430404}
+  - component: {fileID: 1675430406}
+  - component: {fileID: 1675430405}
+  m_Layer: 0
+  m_Name: TammyToadDefault
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1675430404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675430403}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1381465412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1675430405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675430403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88dff4c78c480489409892083f565b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMenu: {fileID: 0}
+  conversationAsset: TammyToad4
+  runOnAwake: 0
+  destroyAfterRun: 0
+  HasCameraChange: 0
+  NewCameraLocation: {fileID: 0}
+--- !u!135 &1675430406
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675430403}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 4
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &1694293461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18791,6 +19508,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4419206673612159681, guid: 756941020a83ce84fa29f2761c7e89a8, type: 3}
   m_PrefabInstance: {fileID: 1810480802}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1822027943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1822027944}
+  - component: {fileID: 1822027945}
+  m_Layer: 0
+  m_Name: TammyToadQuestComplete2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1822027944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822027943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1381465412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1822027945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822027943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d605826e768f34282f48dbb4e703bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: tammytoadquestcomplete2
+  destroyOnLoad: 1
+  eventFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1675430403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1837253715
 GameObject:
   m_ObjectHideFlags: 0

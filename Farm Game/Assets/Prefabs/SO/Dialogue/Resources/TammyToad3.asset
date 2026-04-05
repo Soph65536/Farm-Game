@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: TammyToad3
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: e3ceca058917ec84fadc914431354b2f
+    dialogueItem: {fileID: 11400000, guid: 164cf3e3bd6cb0a49890f3cff7cf26e3, type: 2}
+    position: {x: 312, y: 275.19998}
+    previousguids: []
+  - guid: 7b534e2cc41265543b61ee9f4bf65eec
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 888, y: 160.8}
+    previousguids:
+    - e3ceca058917ec84fadc914431354b2f
+  - guid: 04411ec5363fb2b4daa344fc3a56becb
+    dialogueItem: {fileID: 11400000, guid: fbc90cd9287e20441b95066252e24a24, type: 2}
+    position: {x: 1242.3999, y: 275.19998}
+    previousguids:
+    - 7b534e2cc41265543b61ee9f4bf65eec
+  - guid: 8efe71982101dba41b5a8da240deef97
+    dialogueItem: {fileID: 11400000, guid: 67a271b8c76b20246893f093b7d71d14, type: 2}
+    position: {x: 1713.6, y: 160.8}
+    previousguids:
+    - 04411ec5363fb2b4daa344fc3a56becb
