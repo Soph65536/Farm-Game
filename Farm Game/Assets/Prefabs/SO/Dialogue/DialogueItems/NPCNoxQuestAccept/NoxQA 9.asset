@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb02e8c57bb6be640a5ffbcff69d6b78, type: 3}
-  m_Name: ShneldonPC 2
+  m_Name: NoxQA 9
   m_EditorClassIdentifier: 
-  NameText: 
-  Icon: {fileID: 21300000, guid: d0df8ae72274a374e93b78e78dabd334, type: 3}
-  IsPlayerTextOption: 1
-  DialogueText: Why are you sitting in a cart?
+  NameText: Nox
+  Icon: {fileID: 0}
+  IsPlayerTextOption: 0
+  DialogueText: But you can't go in like that; you'll get eaten by the glowworms..
   EventText: 
