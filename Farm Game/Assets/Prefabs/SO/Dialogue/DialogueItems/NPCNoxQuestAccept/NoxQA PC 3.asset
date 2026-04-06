@@ -15,5 +15,5 @@ MonoBehaviour:
   NameText: 
   Icon: {fileID: 21300000, guid: d0df8ae72274a374e93b78e78dabd334, type: 3}
   IsPlayerTextOption: 1
-  DialogueText: Where are they?!
+  DialogueText: Yes, Where are they?!
   EventText: 

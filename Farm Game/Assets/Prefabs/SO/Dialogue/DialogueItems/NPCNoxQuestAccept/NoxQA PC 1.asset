@@ -15,5 +15,5 @@ MonoBehaviour:
   NameText: 
   Icon: {fileID: 21300000, guid: f5e66947e67d6f547a525f20f5df1ca2, type: 3}
   IsPlayerTextOption: 1
-  DialogueText: I heard you know about Imago.
+  DialogueText: Do you know about Imago?
   EventText: 

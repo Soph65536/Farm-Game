@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: Nox2
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: e3ceca058917ec84fadc914431354b2f
+    dialogueItem: {fileID: 11400000, guid: 9c33fc5cc32beb549a4b18dd3373e9ad, type: 2}
+    position: {x: 312, y: 275.19998}
+    previousguids: []
+  - guid: 7b534e2cc41265543b61ee9f4bf65eec
+    dialogueItem: {fileID: 11400000, guid: 1953ff9b5d3322b479babe71c10137e4, type: 2}
+    position: {x: 671.2, y: 168.8}
+    previousguids:
+    - e3ceca058917ec84fadc914431354b2f
