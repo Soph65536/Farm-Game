@@ -2229,6 +2229,9 @@ MonoBehaviour:
   - clipName: seshootbow
     audioClips:
     - {fileID: 8300000, guid: a5a56391488f7294cb43e156ce0e3bc3, type: 3}
+  - clipName: semagic
+    audioClips:
+    - {fileID: 8300000, guid: b9cffbd14e5f39c4d8d24345f36d09f9, type: 3}
 --- !u!82 &1794890131
 AudioSource:
   m_ObjectHideFlags: 0

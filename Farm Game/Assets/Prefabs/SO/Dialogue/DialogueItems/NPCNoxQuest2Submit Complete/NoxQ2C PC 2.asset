@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb02e8c57bb6be640a5ffbcff69d6b78, type: 3}
-  m_Name: NoxQS
+  m_Name: NoxQ2C PC 2
   m_EditorClassIdentifier: 
-  NameText: Nox
+  NameText: 
   Icon: {fileID: 0}
-  IsPlayerTextOption: 0
-  DialogueText: Did you find a flower yet...?
+  IsPlayerTextOption: 1
+  DialogueText: Thanks!
   EventText: 
