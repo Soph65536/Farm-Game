@@ -24,11 +24,6 @@ public class TriggerDialogue : Interactable
         Invoke(nameof(SetUIRefs), 0.5f);
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.GetComponent<Player>() != null && !runOnAwake) { RunDialogue(); }
-    //}
-
     public void InvokeDialogue(float delay)
     {
         Invoke(nameof(RunDialogue), delay);

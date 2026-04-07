@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class TriggerMerchantMenu : MonoBehaviour
+public class TriggerMerchantMenu : Interactable
 {
     [SerializeField] private MerchantInventory merchantInventory;
 
-    private void OnTriggerEnter(Collider other)
+    protected override void Interact(InputAction.CallbackContext context)
     {
-        merchantInventory.EnterMerchantMenu();
+        if (interactable)
+        {
+            interactPromptUI.SetActive(false);
+            merchantInventory.EnterMerchantMenu();
+        }
     }
 }
