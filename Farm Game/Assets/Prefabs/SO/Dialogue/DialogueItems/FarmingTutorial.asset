@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FarmingTutorial
   m_EditorClassIdentifier: 
   NameText: 
-  Icon: {fileID: 21300000, guid: 99e38edfcc226eb429bbbae180253d05, type: 3}
+  Icon: {fileID: 21300000, guid: b47b6241d8ea7124b9579869207432fa, type: 3}
   IsPlayerTextOption: 0
   DialogueText: On the farm you can grow crops. Hold the P key to teleport between
     the game world and your farm.
