@@ -535,6 +535,62 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491557300461734280}
   m_Enabled: 1
+--- !u!1 &1637553735443648575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126477088224590106}
+  - component: {fileID: 6330520937847874649}
+  m_Layer: 0
+  m_Name: AimBowDecal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126477088224590106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637553735443648575}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1, z: 8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9068285320861793040}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &6330520937847874649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637553735443648575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 7c2575220b793074d94714dde4d33dc4, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_DecalLayerMask: 1
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 3.5}
+  m_Size: {x: 1, y: 1, z: 7}
+  m_FadeFactor: 1
 --- !u!1 &1749214791087023484
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +669,7 @@ Transform:
   m_Children:
   - {fileID: 5210282549358865860}
   - {fileID: 8470428164025344418}
+  - {fileID: 2126477088224590106}
   - {fileID: 7320681685529846733}
   - {fileID: 4782111318125072489}
   m_Father: {fileID: 0}
@@ -742,6 +799,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 972c74ec-77d0-4001-a199-c5eabb9b9c16
     m_ActionName: Player/TeleportFarm[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f7e2572b-f9f1-4407-8106-29391279875b
+    m_ActionName: Player/ShootBow[/Keyboard/h]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -819,6 +880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7236b027e930f4fbe6162b674f82fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimDecal: {fileID: 1637553735443648575}
+  arrowPrefab: {fileID: 5527565267334045179, guid: 24a0d1e51e891014d9cd8bbc2d90da2f, type: 3}
 --- !u!114 &2897476082606577501
 MonoBehaviour:
   m_ObjectHideFlags: 0

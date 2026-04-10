@@ -87,6 +87,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "ShootBow",
+                    "type": "Button",
+                    "id": "f7e2572b-f9f1-4407-8106-29391279875b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "MenuInventory",
                     "type": "Button",
                     "id": "0949edc8-36b0-4160-aee7-f35c83e6c351",
@@ -484,6 +493,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "TeleportFarm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7eb524d1-0f1f-4081-a586-5b587ecd776a",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootBow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

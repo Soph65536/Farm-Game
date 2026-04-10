@@ -14,11 +14,11 @@ public class AreaLoading : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AreaObject.SetActive(true);
+        if (other.GetComponent<Player>() != null) { AreaObject.SetActive(true); }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        AreaObject.SetActive(false);
+        if (other.GetComponent<Player>() != null) { AreaObject.SetActive(false); }
     }
 }

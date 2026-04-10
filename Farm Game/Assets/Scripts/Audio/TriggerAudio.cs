@@ -16,12 +16,12 @@ public class TriggerAudio : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayAudio();
+        if (other.GetComponent<Player>() != null) { PlayAudio(); }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        AudioManager.Instance.StopAudio(audioSource);
+        if (other.GetComponent<Player>() != null) { AudioManager.Instance.StopAudio(audioSource); }
     }
 
     public void PlayAudio()
