@@ -11,6 +11,9 @@ public class HUD : MonoBehaviour
     [SerializeField] private Slider hungerSlider;
     [SerializeField] private Image heldItemImage;
     [SerializeField] private TextMeshProUGUI heldItemQuantity;
+    [SerializeField] private TextMeshProUGUI levelUpTitle;
+    [SerializeField] private TextMeshProUGUI levelUpNumber;
+    [SerializeField] private Animator levelUpAnimator;
     public GameObject interactPrompt;
 
     private void Awake()
@@ -46,5 +49,12 @@ public class HUD : MonoBehaviour
         //set to inactive if no item to show
         heldItemImage.enabled = item != null;
         heldItemQuantity.enabled = item != null;
+    }
+
+    public void ShowLevelUp(string title, string number)
+    {
+        levelUpTitle.text = title;
+        levelUpNumber.text = number;
+        levelUpAnimator.SetTrigger("LevelUp");
     }
 }

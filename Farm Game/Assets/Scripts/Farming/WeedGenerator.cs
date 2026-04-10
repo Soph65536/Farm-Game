@@ -25,6 +25,10 @@ public class WeedGenerator : MonoBehaviour
 
     public void ClearWeeds()
     {
-        foreach (GameObject obj in potentialWeeds) { obj.SetActive(false); }
+        foreach (GameObject obj in potentialWeeds) 
+        {
+            if (obj.activeSelf) { StatManager.Instance.GainExp(1, 0, 0); }
+            obj.SetActive(false); 
+        }
     }
 }

@@ -85,9 +85,11 @@ public class SoilPlot : MonoBehaviour
         {
             Destroy(cropObject);
             Player.Instance.inventory.AddItem(currentCrop.HarvestableItem);
+            StatManager.Instance.GainExp(currentCrop.HarvestExpGain, 0, 0);
 
             currentCrop = null;
             currentGrowth = 0;
+            readyToHarvest = false;
 
             AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "seharvestcrop");
             //animate player harvesting crop

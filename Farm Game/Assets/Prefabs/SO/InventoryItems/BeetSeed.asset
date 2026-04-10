@@ -18,3 +18,4 @@ MonoBehaviour:
   baseGrowthSpeed: 0.2
   prefab: {fileID: 3640965016408673303, guid: c61755edb43882748bd4c7cf33765e73, type: 3}
   harvestableItem: {fileID: 11400000, guid: 577ec216c0d994c4ba87f2f39df4af70, type: 2}
+  harvestExpGain: 9

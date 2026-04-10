@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class LevelLoading : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class LevelLoading : MonoBehaviour
     public int charSelectBuildIndex;
     public int worldAreaBuildIndex;
     public int farmAreaBuildIndex;
+    [SerializeField] private int creditsBuildIndex;
 
     public static LevelLoading Instance { get; private set; }
 
@@ -44,5 +46,11 @@ public class LevelLoading : MonoBehaviour
     public void UnloadScene(int sceneToUnload)
     {
         SceneManager.UnloadSceneAsync(sceneToUnload);
+    }
+
+    public void EnterCredits()
+    {
+        Player.Instance.DisableInput();
+        LoadScene(creditsBuildIndex);
     }
 }

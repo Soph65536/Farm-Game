@@ -96,6 +96,7 @@ public class StatManager : MonoBehaviour
     {
         //if havent alr found skillLevelDisplay then try find it
         if(skillLevelDisplay == null) { skillLevelDisplay = FindObjectOfType<SkillLevelDisplay>(true); }
+        if (hud == null) { hud = Player.Instance.hud.GetComponent<HUD>(); }
 
         switch (skillType)
         {
@@ -104,7 +105,7 @@ public class StatManager : MonoBehaviour
                 { 
                     farmingLevel++;
                     skillLevelDisplay.UpdateSlider(SkillType.Farming, farmingLevel);
-                    //display farming level up text on a timer, or play sound, or both
+                    if (hud != null) { hud.ShowLevelUp("Farming Level Up!", "Level " + farmingLevel.ToString()); }
                 }
                 break;
 
@@ -113,7 +114,7 @@ public class StatManager : MonoBehaviour
                 { 
                     huntingLevel++;
                     skillLevelDisplay.UpdateSlider(SkillType.Hunting, huntingLevel);
-
+                    if (hud != null) { hud.ShowLevelUp("Hunting Level Up!", "Level " + huntingLevel.ToString()); }
                 }
                 break;
 
@@ -122,7 +123,7 @@ public class StatManager : MonoBehaviour
                 { 
                     foragingLevel++;
                     skillLevelDisplay.UpdateSlider(SkillType.Foraging, foragingLevel);
-
+                    if (hud != null) { hud.ShowLevelUp("Foraging Level Up!", "Level " + foragingLevel.ToString()); }
                 }
                 break;
         }
