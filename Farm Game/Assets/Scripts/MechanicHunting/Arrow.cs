@@ -16,11 +16,25 @@ public class Arrow : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up * speed, ForceMode.Impulse);
         InvokeRepeating(nameof(TurnDownwards), arrowTurnFrequency, arrowTurnFrequency);
-        Destroy(transform.parent.gameObject, aliveTime);
+        DestroyThis(aliveTime);
     }
 
     private void TurnDownwards()
     {
         transform.Rotate(new Vector3(arrowTurnAmount, 0, 0));
+    }
+
+    private void DestroyThis(float time)
+    {
+        Destroy(transform.parent.gameObject, time);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent<Animal>(out var animal))
+        {
+            animal.GetHit();
+            DestroyThis(0);
+        }
     }
 }

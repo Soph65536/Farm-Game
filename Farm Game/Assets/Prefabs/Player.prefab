@@ -880,6 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7236b027e930f4fbe6162b674f82fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownTime: 0.4
   aimDecal: {fileID: 1637553735443648575}
   arrowPrefab: {fileID: 5527565267334045179, guid: 24a0d1e51e891014d9cd8bbc2d90da2f, type: 3}
 --- !u!114 &2897476082606577501
