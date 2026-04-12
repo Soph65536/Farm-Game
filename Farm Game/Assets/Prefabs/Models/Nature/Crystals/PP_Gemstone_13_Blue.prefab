@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3761745242275304228}
   - component: {fileID: 3761745242276074244}
   - component: {fileID: 3761745242277073348}
-  - component: {fileID: 3761745242275073797}
+  - component: {fileID: 5850420144541711613}
   m_Layer: 0
   m_Name: PP_Gemstone_13_Blue
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3761745242275073797
-MeshCollider:
+--- !u!65 &5850420144541711613
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5890968570134575493, guid: 816c3e37a32a7f34fbefe884f50f54eb, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.27596253, y: 0.21913905, z: 0.34721208}
+  m_Center: {x: -0.015680842, y: 0.1001892, z: -0.00044802576}

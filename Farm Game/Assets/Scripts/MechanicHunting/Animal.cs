@@ -8,8 +8,9 @@ public class Animal : MonoBehaviour
     [SerializeField] private int maxHealth;
     private int health;
 
+    [SerializeField] private InventoryItem[] potentialDeathLoot;
     [SerializeField] private float deathAnimationTime;
-    [SerializeField] private GameObject deathLoot;
+    [SerializeField] private GameObject deathLootPrefab;
 
     private Animator animator;
 
@@ -27,7 +28,8 @@ public class Animal : MonoBehaviour
 
     private void Die()
     {
-        Instantiate(deathLoot, transform.position, transform.rotation);
+        GameObject pickupItem = Instantiate(deathLootPrefab, transform.position, transform.rotation);
+        pickupItem.GetComponentInChildren<PickupItem>().SetPickupItem(potentialDeathLoot[Random.Range(0, potentialDeathLoot.Length-1)]);
 
         animator.SetTrigger("Die");
         Destroy(gameObject, deathAnimationTime);

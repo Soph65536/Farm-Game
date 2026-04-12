@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8307322894754653445}
   - component: {fileID: 8307322894755980581}
   - component: {fileID: 8307322894757079013}
-  - component: {fileID: 8307322894754887974}
+  - component: {fileID: 8680012372810830615}
   m_Layer: 0
   m_Name: PP_Gemstone_07_Gold
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8307322894754887974
-MeshCollider:
+--- !u!65 &8680012372810830615
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6074504139340782885, guid: 30396a8d74e0ac3468241d49ef28b3a5, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.45802307, y: 0.21162033, z: 0.23916292}
+  m_Center: {x: 0.034139007, y: 0.092336655, z: 0.00000009313226}

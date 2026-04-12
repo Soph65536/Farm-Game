@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5662333279100953693}
   - component: {fileID: 5662333279099626621}
   - component: {fileID: 5662333279098529469}
-  - component: {fileID: 5662333279100532858}
+  - component: {fileID: 8177939913006781330}
   m_Layer: 0
   m_Name: PP_Gemstone_05_Green
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5662333279100532858
-MeshCollider:
+--- !u!65 &8177939913006781330
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: efd9a683f7ac81048922b0a9e35134f3, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.3845444, y: 0.14311409, z: 0.3181076}
+  m_Center: {x: -0.014873862, y: 0.0081757605, z: -0.0065861717}
