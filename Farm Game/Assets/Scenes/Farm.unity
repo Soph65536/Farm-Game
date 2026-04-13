@@ -6182,11 +6182,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1848278404}
   - {fileID: 1356151735}
   - {fileID: 1185569621}
   - {fileID: 1060192702}
   - {fileID: 470911783}
   - {fileID: 870621607}
+  - {fileID: 1739334836}
+  - {fileID: 1310531134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &380696575
@@ -20447,6 +20450,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3899520030807063256, guid: 299e7a1cb6456cf4fa6079cf5978df9b, type: 3}
   m_PrefabInstance: {fileID: 1308273924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1310531133
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 380406122}
+    m_Modifications:
+    - target: {fileID: 7195581742812651797, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_Name
+      value: BigSoilPlot Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9817774
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.19003458
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 21.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+--- !u!4 &1310531134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+  m_PrefabInstance: {fileID: 1310531133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1310531135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7195581742812651797, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+  m_PrefabInstance: {fileID: 1310531133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1310830201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26049,6 +26119,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4775219554002278, guid: 6b444276162548b4e9107350b71e775a, type: 3}
   m_PrefabInstance: {fileID: 1726392776}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1739334835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 380406122}
+    m_Modifications:
+    - target: {fileID: 7195581742812651797, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_Name
+      value: BigSoilPlot Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.149994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9652831
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.26120588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -30.283
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+--- !u!4 &1739334836 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7954218610526660122, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+  m_PrefabInstance: {fileID: 1739334835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1739334837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7195581742812651797, guid: 902f98483fe560f48b6e27ac746ad677, type: 3}
+  m_PrefabInstance: {fileID: 1739334835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1745731643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28832,6 +28969,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2288284868925518344, guid: 62c8cdd661639744489e88180988d15d, type: 3}
   m_PrefabInstance: {fileID: 1843363617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848278403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848278404}
+  - component: {fileID: 1848278405}
+  m_Layer: 0
+  m_Name: Level3Unlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1848278404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848278403}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 380406122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848278405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848278403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1b4cd3b779e4c49b2a4af68f37859c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToUnlock: 3
+  soilPlots:
+  - {fileID: 1739334837}
+  - {fileID: 1310531135}
 --- !u!1001 &1853092328
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class PickupItem : MonoBehaviour
     [SerializeField] private GameObject parentObject;
     [SerializeField] private List<InventoryItem> itemsToPickup;
 
-    public void SetPickupItem(InventoryItem[] items)
+    public void SetPickupItem(List<InventoryItem> items)
     {
         itemsToPickup = new List<InventoryItem>();
         foreach (InventoryItem item in items)

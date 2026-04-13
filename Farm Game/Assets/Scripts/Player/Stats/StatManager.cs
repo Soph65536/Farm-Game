@@ -106,6 +106,13 @@ public class StatManager : MonoBehaviour
                     farmingLevel++;
                     skillLevelDisplay.UpdateSlider(SkillType.Farming, farmingLevel);
                     if (hud != null) { hud.ShowLevelUp("Farming Level Up!", "Level " + farmingLevel.ToString()); }
+
+                    //soil plot unlock
+                    UnlockSoilPlot[] unlockables = GameObject.FindObjectsOfType<UnlockSoilPlot>();
+                    foreach(UnlockSoilPlot unlock in unlockables)
+                    {
+                        if(unlock.levelToUnlock <= farmingLevel) { unlock.Unlock(); }
+                    }
                 }
                 break;
 

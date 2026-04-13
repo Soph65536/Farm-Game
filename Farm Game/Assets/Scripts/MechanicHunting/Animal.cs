@@ -29,8 +29,8 @@ public class Animal : MonoBehaviour
     private void Die()
     {
         //generate loot
-        InventoryItem[] loot = new InventoryItem[StatManager.Instance.huntingLevel];
-        for (int i = 0; i < loot.Length - 1; i++) { loot[i] = potentialDeathLoot[Random.Range(0, potentialDeathLoot.Length - 1)]; }
+        List<InventoryItem> loot = new List<InventoryItem>();
+        for (int i = 0; i < StatManager.Instance.huntingLevel; i++) { loot.Add(potentialDeathLoot[Random.Range(0, potentialDeathLoot.Length)]); }
 
         //create pickup object and set values
         GameObject pickupItem = Instantiate(deathLootPrefab, transform.position, transform.rotation);
