@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: Waldon3
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: db0ec384f95f4d94099159968c75569c
+    dialogueItem: {fileID: 11400000, guid: 2d39541e699ba4c4882acc883bf359e5, type: 2}
+    position: {x: -785.6, y: 168.8}
+    previousguids: []
+  - guid: d0f9e8eaa017c7e4e83923a1e44d82fc
+    dialogueItem: {fileID: 11400000, guid: 49daf9e1a4a0b4f41a067b4f641e4cdf, type: 2}
+    position: {x: -125.600006, y: 180.8}
+    previousguids:
+    - d81cc29a242b5de428769a56fbbe61cb
+  - guid: d81cc29a242b5de428769a56fbbe61cb
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: -452, y: 35.2}
+    previousguids:
+    - db0ec384f95f4d94099159968c75569c
+  - guid: b025bb870a422dc44be035c1b4adbd38
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 399.2, y: 35.2}
+    previousguids:
+    - d0f9e8eaa017c7e4e83923a1e44d82fc
