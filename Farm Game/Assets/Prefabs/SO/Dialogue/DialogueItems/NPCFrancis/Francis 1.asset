@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb02e8c57bb6be640a5ffbcff69d6b78, type: 3}
-  m_Name: TimmyPC Outro
+  m_Name: Francis 1
   m_EditorClassIdentifier: 
-  NameText: 
-  Icon: {fileID: 21300000, guid: 50476dd89c8161a49a0d7a9858bea9e6, type: 3}
-  IsPlayerTextOption: 1
-  DialogueText: ....
-  EventText: merchantmenutimmy
+  NameText: Francis the Witch
+  Icon: {fileID: 0}
+  IsPlayerTextOption: 0
+  DialogueText: Hihi, I'm Francis. The townsfolk don't take too nicely to us shroomfolk.
+  EventText: 

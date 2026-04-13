@@ -28,8 +28,13 @@ public class Animal : MonoBehaviour
 
     private void Die()
     {
+        //generate loot
+        InventoryItem[] loot = new InventoryItem[StatManager.Instance.huntingLevel];
+        for (int i = 0; i < loot.Length - 1; i++) { loot[i] = potentialDeathLoot[Random.Range(0, potentialDeathLoot.Length - 1)]; }
+
+        //create pickup object and set values
         GameObject pickupItem = Instantiate(deathLootPrefab, transform.position, transform.rotation);
-        pickupItem.GetComponentInChildren<PickupItem>().SetPickupItem(potentialDeathLoot[Random.Range(0, potentialDeathLoot.Length-1)]);
+        pickupItem.GetComponentInChildren<PickupItem>().SetPickupItem(loot);
 
         animator.SetTrigger("Die");
         Destroy(gameObject, deathAnimationTime);

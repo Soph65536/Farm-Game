@@ -5,18 +5,25 @@ using UnityEngine;
 public class PickupItem : MonoBehaviour
 {
     [SerializeField] private GameObject parentObject;
-    [SerializeField] private InventoryItem pickupItem;
+    [SerializeField] private List<InventoryItem> itemsToPickup;
 
-    public void SetPickupItem(InventoryItem item)
+    public void SetPickupItem(InventoryItem[] items)
     {
-        pickupItem = item;
+        itemsToPickup = new List<InventoryItem>();
+        foreach (InventoryItem item in items)
+        {
+            itemsToPickup.Add(item);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<Player>() != null)
         {
-            Player.Instance.inventory.AddItem(pickupItem);
+            foreach (InventoryItem item in itemsToPickup)
+            {
+                Player.Instance.inventory.AddItem(item);
+            }
             Destroy(parentObject);
         }
     }

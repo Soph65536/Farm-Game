@@ -12,6 +12,9 @@ public class SoilPlot : MonoBehaviour
     const float chanceOfWeeds = 7; //1/chanceOfWeeds-1 chance
     const float wetDuration = 20; //time in second that crops stay wet for
 
+    const float chanceOfExtraCrop = 15; //1/chanceOfExtraCrop-1 chance
+
+    [SerializeField] public Crop[] plantableCrops; //each soilplot has a specific set of crops that can be planted in it, eg only small crops
     public Crop currentCrop { get; private set; }
 
     private GameObject cropObject;
@@ -51,6 +54,7 @@ public class SoilPlot : MonoBehaviour
     private float CalculateGrowthRate() //per minute
     {
         return currentCrop.BaseGrowthSpeed 
+            * (1 + 0.05f * StatManager.Instance.farmingLevel) //higher level gives slighter faster growth time
             * (isWet ? wetMultiplier : 1) 
             * (hasWeeds ? weedMultiplier : 1);
     }
@@ -85,6 +89,16 @@ public class SoilPlot : MonoBehaviour
         {
             Destroy(cropObject);
             Player.Instance.inventory.AddItem(currentCrop.HarvestableItem);
+
+            //random chances of gaining more of item per farming level above 1
+            for(int i = 2; i <= StatManager.Instance.farmingLevel; i++) 
+            { 
+                if ((int)Random.Range(1, chanceOfExtraCrop) == 1) 
+                { 
+                    Player.Instance.inventory.AddItem(currentCrop.HarvestableItem); 
+                } 
+            }
+
             StatManager.Instance.GainExp(currentCrop.HarvestExpGain, 0, 0);
 
             currentCrop = null;
