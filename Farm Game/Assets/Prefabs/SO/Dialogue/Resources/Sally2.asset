@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: Sally2
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: 328150a24f00e8049b669120dedb55dd
+    dialogueItem: {fileID: 11400000, guid: 12cd2c4cbbd4bc04e942f7f1e8d403da, type: 2}
+    position: {x: -1259, y: 232}
+    previousguids: []
+  - guid: ab91be26ef4ee344fb6e57376303c942
+    dialogueItem: {fileID: 11400000, guid: 451d44e3d8f80024c9a34c386f43e9c3, type: 2}
+    position: {x: -838, y: 205}
+    previousguids:
+    - 328150a24f00e8049b669120dedb55dd
+  - guid: 9819ccf9a7a99e24b9c8ebb62e876760
+    dialogueItem: {fileID: 11400000, guid: d57222e73a46f8b4fb48ce5b8ff8b73d, type: 2}
+    position: {x: -838, y: 448}
+    previousguids:
+    - 328150a24f00e8049b669120dedb55dd
+  - guid: d44b24950b3e96f4688603eff3627563
+    dialogueItem: {fileID: 11400000, guid: 94f92e10339ef3d43b0e8118de67f3f2, type: 2}
+    position: {x: -392, y: 564}
+    previousguids:
+    - 9819ccf9a7a99e24b9c8ebb62e876760
+  - guid: 09737c93579b8634b8d466d33b971277
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 208, y: 464}
+    previousguids:
+    - d44b24950b3e96f4688603eff3627563

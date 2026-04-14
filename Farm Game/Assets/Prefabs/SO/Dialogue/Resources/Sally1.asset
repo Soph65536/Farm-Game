@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8621381ed847d4db790ca49b37c98b, type: 3}
+  m_Name: Sally1
+  m_EditorClassIdentifier: 
+  dialogueData:
+  - guid: 328150a24f00e8049b669120dedb55dd
+    dialogueItem: {fileID: 11400000, guid: 9ba809645f1b4014186b9d6f8a35d14e, type: 2}
+    position: {x: -1259, y: 232}
+    previousguids: []
+  - guid: ab91be26ef4ee344fb6e57376303c942
+    dialogueItem: {fileID: 11400000, guid: 942949364903483489c743770298dd6c, type: 2}
+    position: {x: -838, y: 205}
+    previousguids:
+    - 328150a24f00e8049b669120dedb55dd
+  - guid: a9d78f0db2c02c046be0a7e382302e50
+    dialogueItem: {fileID: 11400000, guid: a08946ac3b355e345921014964577687, type: 2}
+    position: {x: -392, y: 232}
+    previousguids:
+    - ab91be26ef4ee344fb6e57376303c942
+  - guid: ca3c712c2e6913b449bacfa6355350bc
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 16, y: 205}
+    previousguids:
+    - a9d78f0db2c02c046be0a7e382302e50
+  - guid: cacc39b9c61c0544887605b9ad7420ab
+    dialogueItem: {fileID: 11400000, guid: 1d0d145d75da05f429dc0dbd930bf255, type: 2}
+    position: {x: 415, y: 232}
+    previousguids:
+    - ca3c712c2e6913b449bacfa6355350bc
+  - guid: 94ada30b827199f47b987fec4002387f
+    dialogueItem: {fileID: 11400000, guid: 582f33bf6e60d9a4f826335438e0bd68, type: 2}
+    position: {x: 1696, y: 205}
+    previousguids:
+    - 53b2c91f7b130dd44ac8c42cb1065f9f
+  - guid: 9819ccf9a7a99e24b9c8ebb62e876760
+    dialogueItem: {fileID: 11400000, guid: 582f33bf6e60d9a4f826335438e0bd68, type: 2}
+    position: {x: -838, y: 448}
+    previousguids:
+    - 328150a24f00e8049b669120dedb55dd
+  - guid: d44b24950b3e96f4688603eff3627563
+    dialogueItem: {fileID: 11400000, guid: 3d7e279d25c0be543bec8e97398e2a82, type: 2}
+    position: {x: -392, y: 564}
+    previousguids:
+    - 9819ccf9a7a99e24b9c8ebb62e876760
+  - guid: 53b2c91f7b130dd44ac8c42cb1065f9f
+    dialogueItem: {fileID: 11400000, guid: d0925bb5710b6a6408e63fd77f374be0, type: 2}
+    position: {x: 1351, y: 232}
+    previousguids:
+    - e9cc73a857071de419a122c7f9d804f3
+  - guid: 89bd88e267924ef4f942d289d4936547
+    dialogueItem: {fileID: 11400000, guid: 5c6e6f45f936dd547863e61fe108d602, type: 2}
+    position: {x: 1696, y: 448}
+    previousguids:
+    - 53b2c91f7b130dd44ac8c42cb1065f9f
+  - guid: 662ecc5d17de33041bba998314888df5
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 2464, y: 449}
+    previousguids:
+    - 6d44aab70fc2c6d4685e9416b7e3c0e5
+  - guid: 6d44aab70fc2c6d4685e9416b7e3c0e5
+    dialogueItem: {fileID: 11400000, guid: c550f382a7ba1154480bb4bfef7a5cf5, type: 2}
+    position: {x: 2112, y: 540}
+    previousguids:
+    - 89bd88e267924ef4f942d289d4936547
+  - guid: f28e576cbea7b1a4cb93ee30c69fecca
+    dialogueItem: {fileID: 11400000, guid: d9b1c5ef17490bc48bc19f187db52a58, type: 2}
+    position: {x: 2848, y: 232}
+    previousguids:
+    - d44b24950b3e96f4688603eff3627563
+    - 94ada30b827199f47b987fec4002387f
+  - guid: c3cc0f7cbd0098c4f98be07787f724cb
+    dialogueItem: {fileID: 11400000, guid: 86a51f02d0215654b878772dd5e5f8c1, type: 2}
+    position: {x: 4635, y: 232}
+    previousguids:
+    - 03af11c7f76d92e4ab61a9b7de7f9dc5
+  - guid: 31b85b90014350e429670e6217daa17a
+    dialogueItem: {fileID: 11400000, guid: 0e2d792f8da414c4c8c696642063389d, type: 2}
+    position: {x: 5114, y: 205}
+    previousguids:
+    - c3cc0f7cbd0098c4f98be07787f724cb
+  - guid: 99ecf503b7ebb5f4286b65707023c606
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 3468, y: 205}
+    previousguids:
+    - f28e576cbea7b1a4cb93ee30c69fecca
+  - guid: 734751e4ff10cdc489012621692ee5d0
+    dialogueItem: {fileID: 11400000, guid: a63f2e5e96bbb6743a6c3f8896f05c45, type: 2}
+    position: {x: 3827, y: 232}
+    previousguids:
+    - 99ecf503b7ebb5f4286b65707023c606
+  - guid: e9cc73a857071de419a122c7f9d804f3
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 1010, y: 205}
+    previousguids:
+    - cacc39b9c61c0544887605b9ad7420ab
+  - guid: 03af11c7f76d92e4ab61a9b7de7f9dc5
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 4284, y: 205}
+    previousguids:
+    - 734751e4ff10cdc489012621692ee5d0

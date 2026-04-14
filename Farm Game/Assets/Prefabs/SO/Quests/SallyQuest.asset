@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457df3798c943db44a95fe19bcfaa08a, type: 3}
+  m_Name: SallyQuest
+  m_EditorClassIdentifier: 
+  questName: Sally's Scarf
+  questDescription: Sally Snail wants some wool to knit a scarf. Obtain some from
+    nearby creatures.
+  itemsToSubmit:
+  - {fileID: 11400000, guid: 2b5905a9b1dbc264586632a310f39f0b, type: 2}
+  - {fileID: 11400000, guid: af62eedbf50ce1c44b1d626d033914a2, type: 2}
+  completionEvent: sallyquestcomplete1
