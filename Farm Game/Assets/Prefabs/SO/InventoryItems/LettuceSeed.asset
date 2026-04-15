@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6994778dec41147a5df182011cafcb, type: 3}
+  m_Name: LettuceSeed
+  m_EditorClassIdentifier: 
+  itemName: Largeleaf Seed
+  sprite: {fileID: 21300000, guid: 85842e44dd0574247b9129a830c29e31, type: 3}
+  value: 3
+  baseGrowthSpeed: 0.3
+  prefab: {fileID: 7771759141044121876, guid: 90b3fcc476d50dc48889e0f0307e3b4b, type: 3}
+  harvestableItem: {fileID: 11400000, guid: a1b0ab54d15928c459a7517c086e3690, type: 2}
+  harvestExpGain: 9

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6994778dec41147a5df182011cafcb, type: 3}
+  m_Name: MelonSeed
+  m_EditorClassIdentifier: 
+  itemName: Rainbow Melon Seed
+  sprite: {fileID: 21300000, guid: adaa6c74fd45aab43bffd526be68a8e7, type: 3}
+  value: 2
+  baseGrowthSpeed: 0.25
+  prefab: {fileID: 457661172652769172, guid: a14fc074f696e804b8f3581104b6ec6d, type: 3}
+  harvestableItem: {fileID: 11400000, guid: 98ee213024f5c67428c5025a4b3ca3dd, type: 2}
+  harvestExpGain: 11
