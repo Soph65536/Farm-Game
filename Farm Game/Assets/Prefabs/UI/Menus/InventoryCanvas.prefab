@@ -1567,7 +1567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
       propertyPath: tutorialDialogue.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
       propertyPath: tutorialDialogue.Array.data[0]
@@ -1581,6 +1581,16 @@ PrefabInstance:
     - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
       propertyPath: tutorialDialogue.Array.data[2]
       value: 'Right click on an item to discard it. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
+      propertyPath: tutorialDialogue.Array.data[3]
+      value: The bar in the top left of your game view is the hunger bar. When it
+        hits 0 you won't be able to run anymore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 566426686471105317, guid: 26034d9045437ff458649a04dabec438, type: 3}
+      propertyPath: tutorialDialogue.Array.data[4]
+      value: Press the middle mouse button to consume any edible item in your inventory
+        and replenish your hunger.
       objectReference: {fileID: 0}
     - target: {fileID: 3375716456474532643, guid: 26034d9045437ff458649a04dabec438, type: 3}
       propertyPath: m_Pivot.x

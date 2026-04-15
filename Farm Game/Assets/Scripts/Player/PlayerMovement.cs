@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private GameObject cameraHolder;
 
     [Header("Values")]
+    [SerializeField] private float hungrySpeed;
     [SerializeField] private float walkSpeed;
     [SerializeField] private float sprintSpeed;
     [SerializeField] private float jumpHeight;
@@ -110,6 +111,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprint(InputAction.CallbackContext context)
     {
+        if (StatManager.Instance.isHungry) { return; }
+
         moveSpeed = context.performed ? sprintSpeed : walkSpeed;
         moveSoundDelay = context.performed ? sprintSoundDelay : walkSoundDelay;
 
@@ -142,7 +145,8 @@ public class PlayerMovement : MonoBehaviour
         if(movement != Vector2.zero)
         {
             bool sprinting = moveSpeed == sprintSpeed;
-            StatManager.Instance.DecreaseHunger(sprinting ? 2 : 1);
+            StatManager.Instance.ChangeHunger(sprinting ? -2 : -1);
+            if (StatManager.Instance.isHungry) { moveSpeed = hungrySpeed; }
         }
     }
 }

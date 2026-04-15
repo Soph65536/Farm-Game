@@ -4,4 +4,4 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item", menuName = "ScriptableObjects/InventoryHunt")]
 [System.Serializable]
-public class HuntedFood : InventoryItem {}
+public class HuntedFood : Food {}

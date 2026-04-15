@@ -820,6 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b3ca23cdb39164981250816be1c45e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hungrySpeed: 200
   walkSpeed: 250
   sprintSpeed: 400
   jumpHeight: 6

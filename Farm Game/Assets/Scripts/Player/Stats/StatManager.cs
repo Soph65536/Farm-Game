@@ -19,6 +19,7 @@ public class StatManager : MonoBehaviour
     [SerializeField] private int startingMoney = 20;
     public int hunger { get; private set; }
     public int maxHunger;
+    public bool isHungry { get; private set; }
 
     public int maxLevel;
     [SerializeField] private int[] expToLevelUp; //each index is each level
@@ -46,6 +47,7 @@ public class StatManager : MonoBehaviour
 
         money = startingMoney;
         hunger = maxHunger;
+        isHungry = false;
 
         if (maxLevel < 0) { maxLevel = 2; }
         if (expToLevelUp.Length != maxLevel) { Array.Resize(ref expToLevelUp, maxLevel); }
@@ -145,12 +147,14 @@ public class StatManager : MonoBehaviour
         hud.UpdateMoneyValue();
     }
 
-    public void DecreaseHunger(int amount)
+    public void ChangeHunger(int amount)
     {
-        //decrease hunger then update hud
-        hunger -= amount;
+        //change hunger then update hud
+        hunger += amount;
 
         if (hud == null) { hud = Player.Instance.hud.GetComponent<HUD>(); }
         hud.UpdateHungerSlider();
+
+        isHungry = hunger <= 0;
     }
 }

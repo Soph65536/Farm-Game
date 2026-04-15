@@ -119,7 +119,19 @@ MonoBehaviour:
         m_CallState: 2
   middleClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1435882880362162591}
+        m_TargetAssemblyTypeName: InventoryItemButton, Assembly-CSharp
+        m_MethodName: Eat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   rightClick:
     m_PersistentCalls:
       m_Calls:

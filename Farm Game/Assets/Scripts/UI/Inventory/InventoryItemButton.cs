@@ -36,6 +36,16 @@ public class InventoryItemButton : MonoBehaviour
         if (Player.Instance.inventory.SetHeldItem(menuItem)) { UIManager.Instance.ExitMenu(); }
     }
 
+    public void Eat()
+    {
+        if(menuItem.itemType.GetType() == typeof(Food))
+        {
+            Food foodItem = (Food)menuItem.itemType;
+            StatManager.Instance.ChangeHunger(foodItem.HungerIncrease);
+            Player.Instance.inventory.RemoveItem(menuItem);
+        }
+    }
+
     public void Discard()
     {
         Player.Instance.inventory.RemoveItem(menuItem);
