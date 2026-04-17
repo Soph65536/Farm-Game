@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Blueroot
   sprite: {fileID: 21300000, guid: 4861e97bcf7b1844b94d479c1c52cf9f, type: 3}
   value: 4
+  hungerIncrease: 45

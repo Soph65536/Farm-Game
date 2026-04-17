@@ -59,5 +59,9 @@ public class SubmitQuestDisplay : MonoBehaviour
             UIManager.Instance.ExitMenu();
             if (submittingQuest.CompletionEvent != string.Empty) { EventManager.Instance.RunEvent(submittingQuest.CompletionEvent); }
         }
+        else
+        {
+            AudioManager.Instance.PlayAudio(false, Player.Instance.audioSource, "sebuzzer");
+        }
     }
 }

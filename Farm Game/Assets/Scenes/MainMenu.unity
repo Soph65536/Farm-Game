@@ -1775,6 +1775,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 231643887529165895, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 231643887529165895, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 231643887529165895, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428730145327690067, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428730145327690067, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 563903100882949577, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 563903100882949577, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 791206437195338562, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1875,6 +1903,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1791949901477921957, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791949901477921957, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791949901477921957, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341832564153371254, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341832564153371254, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341832564153371254, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368150356568117780, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368150356568117780, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4186537295214511978, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1889,6 +1949,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4186537295214511978, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401574286380661116, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401574286380661116, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835051961458252157, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835051961458252157, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835051961458252157, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4890130214931314484, guid: 155b0a42032142e4fa160c57dc39e9ec, type: 3}
@@ -2192,15 +2272,26 @@ MonoBehaviour:
   - clipName: musicintro
     audioClips:
     - {fileID: 8300000, guid: cad878ebbee122d4a9da92c11cb7a34b, type: 3}
+  - clipName: musicfarm
+    audioClips:
+    - {fileID: 8300000, guid: cf66e2e48eb25774bae1d9d4c7bb93f0, type: 3}
+    - {fileID: 8300000, guid: 13b464698d2b6e94681c4498359bbc83, type: 3}
+    - {fileID: 8300000, guid: cea71b42ed092904685d0ed7e3e2a602, type: 3}
+    - {fileID: 8300000, guid: b8ccfe0a289ee63428cbbbeca8850cea, type: 3}
   - clipName: musicvillage1
     audioClips:
     - {fileID: 8300000, guid: 8cd1ea978ad1c4d4885ddae69d48c054, type: 3}
   - clipName: musicwilderness1
     audioClips:
-    - {fileID: 8300000, guid: 703c775e6d559004ebd77f9d69e028fe, type: 3}
+    - {fileID: 8300000, guid: 8c45fcc00110a7e47abcb2df803097ba, type: 3}
+  - clipName: musiccave
+    audioClips:
+    - {fileID: 8300000, guid: ca50c561675df2f44ab61ffc7199a0ee, type: 3}
+    - {fileID: 8300000, guid: 795298d30b186584bab7a9b205822fb9, type: 3}
+    - {fileID: 8300000, guid: 400695a70082b70499f4e887dda1e1b9, type: 3}
   - clipName: musicwilderness2
     audioClips:
-    - {fileID: 8300000, guid: 8c45fcc00110a7e47abcb2df803097ba, type: 3}
+    - {fileID: 8300000, guid: 033023046e1e9c647a89b2999b3f7fc9, type: 3}
   - clipName: sewalk
     audioClips:
     - {fileID: 8300000, guid: f916a79cfd359014e98a2e7f84b8e7cd, type: 3}
@@ -2233,6 +2324,15 @@ MonoBehaviour:
   - clipName: semagic
     audioClips:
     - {fileID: 8300000, guid: b9cffbd14e5f39c4d8d24345f36d09f9, type: 3}
+  - clipName: sebuzzer
+    audioClips:
+    - {fileID: 8300000, guid: 3798240aee47dd94e85993b6d6e9dca6, type: 3}
+  - clipName: sesellitem
+    audioClips:
+    - {fileID: 8300000, guid: 5de807e7a8524444b89ee1950a38b3f4, type: 3}
+  - clipName: sebuyitem
+    audioClips:
+    - {fileID: 8300000, guid: 30775e356d9b4a34aaf854ac5a069b41, type: 3}
 --- !u!82 &1794890131
 AudioSource:
   m_ObjectHideFlags: 0

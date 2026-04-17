@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameText: 
   Icon: {fileID: 0}
-  IsPlayerTextOption: 0
+  IsPlayerTextOption: 1
   DialogueText: I'll try find some.
   EventText: sallyquestaccept

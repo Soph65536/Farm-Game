@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Corn
   sprite: {fileID: 21300000, guid: 37f6627d163de1a429c89ebf825747f4, type: 3}
   value: 6
+  hungerIncrease: 65

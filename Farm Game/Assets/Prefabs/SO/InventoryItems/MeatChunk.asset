@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Meat Chunk
   sprite: {fileID: 21300000, guid: 6626018983ed6c34598b6ce7b6fe3d89, type: 3}
   value: 3
+  hungerIncrease: 55

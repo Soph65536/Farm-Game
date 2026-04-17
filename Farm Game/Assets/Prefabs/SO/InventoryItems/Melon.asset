@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Rainbow Melon
   sprite: {fileID: 21300000, guid: 86e0bbd5b46a9f1468bb38b227450fe9, type: 3}
   value: 4
+  hungerIncrease: 55
