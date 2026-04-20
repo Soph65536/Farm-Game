@@ -162,5 +162,6 @@ MonoBehaviour:
   potentialDeathLoot:
   - {fileID: 11400000, guid: b8bea7bb17ff82447b5cee328be3d0a1, type: 2}
   - {fileID: 11400000, guid: af62eedbf50ce1c44b1d626d033914a2, type: 2}
+  expGain: 7
   deathAnimationTime: 0
   deathLootPrefab: {fileID: 7042806118574276901, guid: d6c97d779b13b9b49b49506b3a59f34c, type: 3}

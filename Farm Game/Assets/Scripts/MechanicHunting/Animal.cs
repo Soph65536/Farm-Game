@@ -9,6 +9,7 @@ public class Animal : MonoBehaviour
     private int health;
 
     [SerializeField] private InventoryItem[] potentialDeathLoot;
+    [SerializeField] private int expGain;
     [SerializeField] private float deathAnimationTime;
     [SerializeField] private GameObject deathLootPrefab;
 
@@ -36,6 +37,7 @@ public class Animal : MonoBehaviour
         GameObject pickupItem = Instantiate(deathLootPrefab, transform.position, transform.rotation);
         pickupItem.GetComponentInChildren<PickupItem>().SetPickupItem(loot);
 
+        StatManager.Instance.GainExp(0, expGain, 0);
         animator.SetTrigger("Die");
         Destroy(gameObject, deathAnimationTime);
     }

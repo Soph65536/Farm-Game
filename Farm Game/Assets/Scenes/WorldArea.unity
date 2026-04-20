@@ -1042,6 +1042,7 @@ Transform:
   - {fileID: 2018860384}
   - {fileID: 1629217324}
   - {fileID: 838337476}
+  - {fileID: 1224165311}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &66014544
@@ -25239,6 +25240,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7391336850586397269, guid: 8587e00a48df2084ea9a83baabbf5599, type: 3}
   m_PrefabInstance: {fileID: 1223302630}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1224165310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224165311}
+  - component: {fileID: 1224165312}
+  m_Layer: 0
+  m_Name: SkyboxController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1224165311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224165310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 66014543}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224165312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224165310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2437fb62ef9514786f4bb6c6e93467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxes:
+  - {fileID: 2100000, guid: fd522b2844a03d14dae9178da7564b2a, type: 2}
+  - {fileID: 2100000, guid: 1cf6f4c6e6e0518419839d3f5448dd99, type: 2}
+  - {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
+  - {fileID: 2100000, guid: d1dd48bcd67222844b6be5cfe274a17c, type: 2}
+  - {fileID: 2100000, guid: cc421da483ed06c49933077a621bff25, type: 2}
+  - {fileID: 2100000, guid: 0c233f99a3def7049bdb8a2638ca8158, type: 2}
+  - {fileID: 2100000, guid: 6614b548529c0a5438303dae49ca93a2, type: 2}
+  timeSpeed: 8
 --- !u!1 &1230886833
 GameObject:
   m_ObjectHideFlags: 0
