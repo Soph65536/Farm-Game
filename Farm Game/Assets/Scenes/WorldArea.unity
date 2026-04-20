@@ -3415,6 +3415,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2222118132905902345, guid: 35d2a8dab4447e847880443f20c62714, type: 3}
   m_PrefabInstance: {fileID: 116262341}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &116262343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1557502234269309875, guid: 35d2a8dab4447e847880443f20c62714, type: 3}
+  m_PrefabInstance: {fileID: 116262341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &118647290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27408,7 +27413,7 @@ MonoBehaviour:
   runOnAwake: 0
   destroyAfterRun: 1
   HasCameraChange: 1
-  NewCameraLocation: {fileID: 1314673055}
+  NewCameraLocation: {fileID: 116262343}
 --- !u!135 &1314673059
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46602,12 +46607,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7474390146887293020, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
+      propertyPath: m_Radius
+      value: 81.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474390146887293020, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
       propertyPath: m_Center.x
-      value: 178.2
+      value: 165.1
       objectReference: {fileID: 0}
     - target: {fileID: 7474390146887293020, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
       propertyPath: m_Center.z
-      value: 169.2
+      value: 174.8
       objectReference: {fileID: 0}
     - target: {fileID: 8485006012936121147, guid: 0d19ddabebe44f44da2dff80f7b69414, type: 3}
       propertyPath: m_Sprite

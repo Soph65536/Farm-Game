@@ -76,7 +76,7 @@ MonoBehaviour:
     dialogueItem: {fileID: 11400000, guid: d9b1c5ef17490bc48bc19f187db52a58, type: 2}
     position: {x: 2848, y: 232}
     previousguids:
-    - d44b24950b3e96f4688603eff3627563
+    - 7f5d7f465801e8b4bb92b31fc7264427
     - 94ada30b827199f47b987fec4002387f
   - guid: c3cc0f7cbd0098c4f98be07787f724cb
     dialogueItem: {fileID: 11400000, guid: 86a51f02d0215654b878772dd5e5f8c1, type: 2}
@@ -108,3 +108,8 @@ MonoBehaviour:
     position: {x: 4284, y: 205}
     previousguids:
     - 734751e4ff10cdc489012621692ee5d0
+  - guid: 7f5d7f465801e8b4bb92b31fc7264427
+    dialogueItem: {fileID: 11400000, guid: da846aa0b377ff346b873ae9d0e36757, type: 2}
+    position: {x: 16, y: 464}
+    previousguids:
+    - d44b24950b3e96f4688603eff3627563
