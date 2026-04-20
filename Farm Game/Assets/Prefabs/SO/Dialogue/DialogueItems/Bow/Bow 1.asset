@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bow 1
   m_EditorClassIdentifier: 
   NameText: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 8af7434034bdacd41ab28783574adaf6, type: 3}
   IsPlayerTextOption: 0
   DialogueText: It's a bow!
   EventText: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NPCNoxQ2C 1
   m_EditorClassIdentifier: 
   NameText: Nox
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: b4e46b37de046c14eadf4a628dfc2d92, type: 3}
   IsPlayerTextOption: 0
   DialogueText: Okay... *monch monch*.. I should be able to remove them now...
   EventText: 

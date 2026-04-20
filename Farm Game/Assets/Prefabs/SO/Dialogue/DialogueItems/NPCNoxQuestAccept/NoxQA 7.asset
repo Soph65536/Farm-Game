@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NoxQA 7
   m_EditorClassIdentifier: 
   NameText: Nox
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: b4e46b37de046c14eadf4a628dfc2d92, type: 3}
   IsPlayerTextOption: 0
   DialogueText: Were you looking for them? That's a very scary thing to do..
   EventText: 

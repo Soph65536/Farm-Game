@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sally 3
   m_EditorClassIdentifier: 
   NameText: Sally Snail
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: e862c4405eabbd94c9c5f2adb1272148, type: 3}
   IsPlayerTextOption: 0
   DialogueText: That 'Master Toad' wotsit needs to chill... what're they thinkin',
     restricting people passin' through?!

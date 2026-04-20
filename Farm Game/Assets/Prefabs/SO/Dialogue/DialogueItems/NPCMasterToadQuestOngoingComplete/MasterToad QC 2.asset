@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MasterToad QC 2
   m_EditorClassIdentifier: 
   NameText: Master Toad
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 75fcae83dc1b935419846fea4ad24736, type: 3}
   IsPlayerTextOption: 0
   DialogueText: Now get going through those gates.. I don't want you lingering in
     my village any longer.
