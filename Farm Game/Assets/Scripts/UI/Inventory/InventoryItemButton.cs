@@ -38,11 +38,9 @@ public class InventoryItemButton : MonoBehaviour
 
     public void Eat()
     {
-        if (menuItem.itemType.GetType() == typeof(Food))
+        Food foodItem = (Food)(menuItem.itemType);
+        if (foodItem != null)
         {
-            Debug.Log(((Food)menuItem.itemType));
-            Food foodItem = (Food)menuItem.itemType;
-            Debug.Log(foodItem);
             StatManager.Instance.ChangeHunger(foodItem.HungerIncrease);
             Player.Instance.inventory.RemoveItem(menuItem);
         }
