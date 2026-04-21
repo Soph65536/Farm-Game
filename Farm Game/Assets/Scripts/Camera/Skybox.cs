@@ -11,14 +11,11 @@ public class Skybox : MonoBehaviour
     private int numOfSkyboxes;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         time = 0;
         numOfSkyboxes = skyboxes.Length;
-    }
 
-    private void OnEnable()
-    {
         InvokeRepeating(nameof(UpdateTime), 0.1f, timeSpeed * Time.deltaTime);
     }
 

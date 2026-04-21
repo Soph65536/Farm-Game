@@ -49,6 +49,9 @@ public class CameraController : MonoBehaviour
         //set cinemachine camera values
         freeLook.Follow = followObject.transform;
         freeLook.LookAt = followObject.transform;
+
+        //set rotation so not going through floor
+        if (!lookingAtPlayer && freeLook.m_YAxis.Value < 0.25f) { freeLook.m_YAxis.Value = 0.25f; }
     }
 
     public void SetSensitivity(float x, float y)
